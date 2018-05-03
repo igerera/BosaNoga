@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-width: 1205px;
 }
@@ -10,6 +16,7 @@ body {
 }
 
 .wrapper {
+    height: 100%;
     width: 1205px;
     margin: 0 auto;
 }
@@ -17,7 +24,28 @@ body {
 .header {
     .top-menu {
         min-height: 49px;
+        height: 1px;
         background: #A1B3BF;
+        &__items {
+            height: 100%;
+            display: flex;
+            padding: 0 35px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            list-style: none;
+            flex: 1;
+            text-align: center;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #333333;
+                &:hover {
+                    color: #DBE4E7;
+                }
+            }
+        }
     }
     .header-main {
         display: flex;

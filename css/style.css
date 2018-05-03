@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   min-width: 1205px;
 }
@@ -8,12 +13,34 @@ body {
   margin: 0 auto;
 }
 .wrapper {
+  height: 100%;
   width: 1205px;
   margin: 0 auto;
 }
 .header .top-menu {
   min-height: 49px;
+  height: 1px;
   background: #A1B3BF;
+}
+.header .top-menu__items {
+  height: 100%;
+  display: flex;
+  padding: 0 35px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .top-menu__item {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+}
+.header .top-menu__item a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333333;
+}
+.header .top-menu__item a:hover {
+  color: #DBE4E7;
 }
 .header .header-main {
   display: flex;
