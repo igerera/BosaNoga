@@ -12,4 +12,33 @@ body {
 .wrapper {
     width: 1205px;
     margin: 0 auto;
-  }
+}
+
+.header {
+    .top-menu {
+        min-height: 49px;
+        background: #A1B3BF;
+    }
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 124px;
+        background: url(../img/header-waves.png) bottom center no-repeat, linear-gradient(93.68deg, #EBE5E9 5.29%, #D1E3E5 95.42%);
+        &__wrapper {
+            min-height: 139px;
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+        .hidden-panel {
+            display: none;
+            min-height: 55px;
+            background: url(../img/header-waves.png) bottom center no-repeat, linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
+            box-shadow: inset 0px 2px 2px rgba(41, 42, 58, 0.25);
+        }
+    }
+    .main-menu {
+        min-height: 37px;
+    }
+}
