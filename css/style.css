@@ -180,3 +180,41 @@ body {
   color: #FFFFFF;
   background: linear-gradient(270deg, rgba(161, 179, 191, 0.8) 72.59%, rgba(161, 179, 191, 0) 98.05%);
 }
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/slider_sprite.png);
+  background-repeat: no-repeat;
+}
+.slider__arrow_left {
+  left: 10px;
+  background-position: 0 0;
+}
+.slider__arrow_right {
+  right: 10px;
+  background-position: -30px 0;
+}
+.slider__arrow:hover {
+  cursor: pointer;
+}
+.slider__circles {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+.slider__circle {
+  height: 30px;
+  width: 30px;
+  background-image: url(../img/slider_sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+}
+.slider__circle_active {
+  background-position: -30px -30px;
+}
+.slider__circle:hover {
+  cursor: pointer;
+}

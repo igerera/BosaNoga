@@ -188,4 +188,42 @@ body {
             background: linear-gradient(270deg, rgba(161, 179, 191, 0.8) 72.59%, rgba(161, 179, 191, 0) 98.05%);
         }
     }
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        height: 30px;
+        width: 30px;
+        background-image: url(../img/slider_sprite.png);
+        background-repeat: no-repeat;
+        &_left{
+            left: 10px; 
+            background-position: 0 0;
+        }
+        &_right{
+            right: 10px;
+            background-position: -30px 0;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__circles{
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 48%;
+    }
+    &__circle{ 
+        height: 30px;
+        width: 30px;
+        background-image: url(../img/slider_sprite.png);
+        background-repeat: no-repeat; 
+        background-position: 0 -30px;
+        &_active{
+            background-position: -30px -30px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
