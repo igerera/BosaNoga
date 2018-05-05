@@ -10,6 +10,10 @@ body {
     min-width: 1205px;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .container {
     font-family: Roboto, sans-serif;
     max-width: 1440px;
@@ -457,11 +461,12 @@ body {
         }
     }
 }
+
 .about-us {
     position: relative;
     max-width: 790px;
     margin: 0 auto;
-    padding-bottom: 42px;
+    padding-bottom: 35px;
     &__title {
         margin: 30px auto 0;
         font-weight: 500;
@@ -471,7 +476,6 @@ body {
         text-transform: uppercase;
         color: #000000;
     }
-
     &__text {
         margin: 23px auto 0;
         font-size: 16px;
@@ -506,11 +510,61 @@ body {
             border: 1px solid #AFC1CD;
             box-sizing: border-box;
             border-radius: 19.5px;
-            &:hover{
+            &:hover {
                 border-color: #000000;
                 color: #000000;
                 cursor: pointer;
             }
         }
+    }
+}
+
+.footer {
+    min-height: 96px;
+    height: 1px;
+    margin: 35px auto 0;
+    background: url(../img/footer-waves.png) top center no-repeat, linear-gradient(92.54deg, #EBE5E9 5.3%, #D1E3E5 95.53%);
+}
+
+.subscribe {
+    display: flex;
+    height: 100%;
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        color: #333333;
+        mix-blend-mode: normal;
+    }
+    &__radio-label {
+        margin-right: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #333333; // background: #000;
+    }
+    &__email {
+        width: 208px;
+        height: 30px;
+        background: #FFFFFF;
+        font-weight: 300;
+        font-size: 14px;
+        vertical-align: middle;
+        color: #D6D6D6;
+    }
+    &__submit {
+        width: 101px;
+        height: 30px;
+        margin-left: -8px;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 12px;
+        text-align: center;
+        vertical-align: middle;
+        color: #FFFFFF;
+        background: #A1B3BF;
     }
 }
