@@ -22,6 +22,31 @@ body {
     margin: 0 auto;
 }
 
+.h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: #333333;
+}
+
+.arrow {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/slider_sprite.png);
+    background-repeat: no-repeat;
+    &:hover {
+        cursor: pointer;
+        outline: solid 1px #cccccc;
+    }
+}
+
+.wave-bottom {
+    background-image: url(../img/new-deals-background-wave.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
 .header {
     .top-menu {
         min-height: 49px;
@@ -177,7 +202,7 @@ body {
 .slider {
     &__picture {
         position: relative;
-        h2 {
+        .h2 {
             position: absolute;
             right: 4px;
             top: 42px;
@@ -189,6 +214,17 @@ body {
             text-align: center;
             color: #FFFFFF;
             background: linear-gradient(270deg, rgba(161, 179, 191, 0.8) 72.59%, rgba(161, 179, 191, 0) 98.05%);
+        }
+    }
+    &__arrow {
+        top: 45%;
+        &_left {
+            left: 7px;
+            background-position: 0 0;
+        }
+        &_right {
+            right: 7px;
+            background-position: -30px 0;
         }
     }
     &__circles {
@@ -212,40 +248,10 @@ body {
     }
 }
 
-h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    color: #333333;
-}
-
-.arrow {
-    position: absolute;
-    top: 45%;
-    height: 30px;
-    width: 30px;
-    background-image: url(../img/slider_sprite.png);
-    background-repeat: no-repeat;
-    &_left {
-        left: 7px;
-        background-position: 0 0;
-    }
-    &_right {
-        right: 7px;
-        background-position: -30px 0;
-    }
-    &:hover {
-        cursor: pointer;
-    }
-}
-
 .new-deals {
     max-width: 1036px;
     margin: 0 auto;
-    padding: 40px 20px 60px;
-    background-image: url(../img/new-deals-background-wave.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    padding: 40px 20px 50px;
     &__menu {
         padding-top: 23px;
         border-bottom: 2px solid #F4F5F2;
@@ -287,13 +293,15 @@ h2 {
         justify-content: space-between;
         align-items: center;
         margin-top: 52px;
-        .arrow {
-            &_left {
-                left: -45px;
-            }
-            &_right {
-                right: -45px;
-            }
+    }
+    &__arrow {
+        &_left {
+            background-position: -60px 0;
+            left: -45px;
+        }
+        &_right {
+            background-position: -90px 0;
+            right: -45px;
         }
     }
     &__product {
@@ -302,6 +310,11 @@ h2 {
         border: solid 0.5px rgba(41, 42, 58, 0.25);
         background-repeat: no-repeat;
         background-position: center center;
+        a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
         &_active {
             position: relative;
             width: 383px;
@@ -327,8 +340,9 @@ h2 {
         }
     }
     &__product-info {
+        padding-top: 8px;
         text-align: center;
-        h3 {
+        .h3 {
             font-weight: 500;
             font-size: 24px;
             color: #333333;
@@ -341,6 +355,105 @@ h2 {
             span {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+.sales-and-news {
+    max-width: 1036px;
+    margin: 0 auto;
+    padding: 35px 20px 60px;
+    &__items {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 285px 385px auto;
+        grid-template-rows: 185px 185px;
+        margin-top: 22px;
+    }
+    &__item {
+        background-repeat: no-repeat;
+        &:hover {
+            box-shadow: 3px 3px 4px 1px rgba(255, 101, 165, 0.25);
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+        }
+        .h3 {
+            width: 100%;
+            padding: 12px 0;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: rgba(235, 229, 233, 0.5);
+        }
+        &_1 {
+            background-image: url(../img/sales-and-news__item_1.jpg);
+        }
+        &_2 {
+            outline: 2px solid #FFFFFF;
+            outline-offset: -14px;
+            background-image: url(../img/sales-and-news__item_2.jpg);
+            .h3 {
+                margin-top: 16px;
+                align-self: flex-start;
+                font-size: 32px;
+                line-height: 1;
+                background-color: unset;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+        &_3 {
+            background-image: url(../img/sales-and-news__item_3.jpg);
+        }
+        &_4 {
+            outline: 2px solid #FFFFFF;
+            outline-offset: -14px;
+            background-image: url(../img/sales-and-news__item_4.jpg);
+            .h3 {
+                align-self: center;
+            }
+        }
+    }
+    &__news {
+        position: relative;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column: 3;
+        padding: 10px 20px;
+        background: #EEEEEE;
+    }
+    &__new {
+        margin: 40px 0;
+        time {
+            font-weight: 300;
+            font-size: 12px;
+            color: #333333;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333333;
+        }
+    }
+    &__arrow {
+        &_up {
+            background-position: -90px -30px;
+            left: 45%;
+        }
+        &_down {
+            background-position: -60px -30px;
+            left: 45%;
+            bottom: 5px;
         }
     }
 }
