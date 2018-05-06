@@ -552,7 +552,10 @@ a:hover {
         font-weight: 300;
         font-size: 14px;
         vertical-align: middle;
-        color: #D6D6D6;
+        color: #333333;
+        &::placeholder {
+            color: #D6D6D6;
+        }
     }
     &__submit {
         width: 101px;
@@ -620,24 +623,87 @@ a:hover {
     &__paid {
         width: 46px;
         height: 28px;
-        background: #FFFFFF;
         border: 2px solid #FFFFFF;
-        box-sizing: border-box;
         border-radius: 8px;
+        background-color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-image: url(../img/footer_sprite.png);
         &:not(:first-child) {
             margin-left: 5px;
         }
+        &_paypal {
+            background-position: -2px -6px;
+        }
+        &_master-card {
+            background-position: -54px -8px;
+        }
+        &_visa {
+            background-position: -104px -8px;
+        }
+        &_yandex {
+            background-position: -154px -8px;
+        }
+        &_webmoney {
+            background-position: -2px -46px;
+        }
+        &_qiwi {
+            background-position: -52px -46px;
+        }
     }
     &__social-links {
-        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        &_title {
+            width: 100%;
+        }
+    }
+    &__social-link {
+        width: 36px;
+        height: 36px;
+        margin: 12px 5px 0;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-image: url(../img/footer_sprite.png);
+        &_twitter {
+            background-position: -107px -42px;
+        }
+        &_vk {
+            background-position: -157px -42px;
+        }
+        &:hover {
+            background-color: #cccccc;
+            cursor: pointer;
+        }
     }
     &__contacts {
         flex: 1;
         text-align: right;
     }
     &__copyright {
+        margin-top: 23px;
         font-weight: normal;
         font-size: 12px;
         text-align: center;
+    }
+    &__phone {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #FFFFFF;
+        &_text {
+            font-weight: 300;
+        }
+    }
+    &__email {
+        display: block;
+        margin-top: 37px;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-image: url(../img/envelop.png);
+        background-position: 49% 0;
     }
 }

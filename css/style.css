@@ -532,6 +532,9 @@ a:hover {
   font-weight: 300;
   font-size: 14px;
   vertical-align: middle;
+  color: #333333;
+}
+.subscribe__email::placeholder {
   color: #D6D6D6;
 }
 .subscribe__submit {
@@ -597,23 +600,86 @@ a:hover {
 .footer__paid {
   width: 46px;
   height: 28px;
-  background: #FFFFFF;
   border: 2px solid #FFFFFF;
-  box-sizing: border-box;
   border-radius: 8px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../img/footer_sprite.png);
 }
 .footer__paid:not(:first-child) {
   margin-left: 5px;
 }
+.footer__paid_paypal {
+  background-position: -2px -6px;
+}
+.footer__paid_master-card {
+  background-position: -54px -8px;
+}
+.footer__paid_visa {
+  background-position: -104px -8px;
+}
+.footer__paid_yandex {
+  background-position: -154px -8px;
+}
+.footer__paid_webmoney {
+  background-position: -2px -46px;
+}
+.footer__paid_qiwi {
+  background-position: -52px -46px;
+}
 .footer__social-links {
-  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.footer__social-links_title {
+  width: 100%;
+}
+.footer__social-link {
+  width: 36px;
+  height: 36px;
+  margin: 12px 5px 0;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/footer_sprite.png);
+}
+.footer__social-link_twitter {
+  background-position: -107px -42px;
+}
+.footer__social-link_vk {
+  background-position: -157px -42px;
+}
+.footer__social-link:hover {
+  background-color: #cccccc;
+  cursor: pointer;
 }
 .footer__contacts {
   flex: 1;
   text-align: right;
 }
 .footer__copyright {
+  margin-top: 23px;
   font-weight: normal;
   font-size: 12px;
   text-align: center;
+}
+.footer__phone {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+.footer__phone_text {
+  font-weight: 300;
+}
+.footer__email {
+  display: block;
+  margin-top: 37px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-image: url(../img/envelop.png);
+  background-position: 49% 0;
 }
