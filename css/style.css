@@ -95,6 +95,9 @@ a:hover {
   text-decoration: none;
   color: #A1B3BF;
 }
+.header .header-main__phone a:hover {
+  color: #FFFFFF;
+}
 .header .header-main__phone p {
   font-weight: 300;
   font-size: 16px;
@@ -734,6 +737,9 @@ a:hover {
   line-height: 1.4;
   color: #FFFFFF;
 }
+.footer__phone:hover {
+  text-decoration: underline;
+}
 .footer__phone_text {
   font-weight: 300;
 }
@@ -745,4 +751,7 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url(../img/envelop.png);
   background-position: 49% 0;
+}
+.footer__email:hover {
+  text-decoration: underline;
 }
