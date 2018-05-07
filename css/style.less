@@ -347,8 +347,6 @@ a:hover {
         width: 1200px;
         height: 357px;
         margin: auto;
-        margin-top: 25px;
-        border: 1px solid black;
         position: relative;
         overflow: hidden;
         .h2 {
@@ -375,19 +373,19 @@ a:hover {
         animation-duration: 10s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        &_1{
+        &_1 {
             background: url(../img/slider.jpg);
             animation-delay: 7.5s;
         }
-        &_2{
+        &_2 {
             background: url(../img/slider.jpg);
             animation-delay: 5s;
         }
-        &_3{
+        &_3 {
             background: url(../img/slider.jpg);
             animation-delay: 2.5s;
         }
-        &_4{
+        &_4 {
             background: url(../img/slider.jpg);
             animation-delay: 0s;
         }
@@ -427,7 +425,7 @@ a:hover {
 .new-deals {
     max-width: 1036px;
     margin: 0 auto;
-    padding: 40px 20px 50px;
+    padding: 44px 20px 50px;
     &__menu {
         padding-top: 23px;
         border-bottom: 2px solid #F4F5F2;
@@ -694,7 +692,7 @@ a:hover {
 .subscribe {
     min-height: 92px;
     height: 1px;
-    margin: 35px auto 0;
+    margin: 30px auto 0;
     background: url(../img/footer-waves.png) top center no-repeat, linear-gradient(92.54deg, #EBE5E9 5.3%, #D1E3E5 95.53%);
     &__wrapper {
         display: flex;
@@ -711,35 +709,86 @@ a:hover {
         color: #333333;
         mix-blend-mode: normal;
     }
-    &__radio-label {
-        margin-right: 15px;
-        font-weight: 300;
-        font-size: 16px;
-        color: #333333;
+    &__radios {
+        display: flex;
+        align-items: center;
+    }
+    &__radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        margin: 10px 0 0 7px;
+        &:checked+&_text:after {
+            opacity: 1;
+        }
+        &_label {
+            margin-right: 10px;
+            font-weight: 300;
+            font-size: 16px;
+            color: #333333;
+        }
+        &_text {
+            position: relative;
+            padding: 0 0 0 25px;
+            cursor: pointer;
+            &::before {
+                content: '';
+                position: absolute;
+                top: -3px;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #FFF;
+                box-sizing: content-box;
+                border-radius: 50%;
+                background: rgb(221, 228, 232);
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 5px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #A1B3BF;
+                ;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
+                opacity: 0;
+                transition: .2s;
+            }
+        }
     }
     &__email {
-        width: 208px;
+        width: 204px;
         height: 30px;
-        background: #FFFFFF;
+        padding: 0 10px;
+        margin-left: 8px;
         font-weight: 300;
         font-size: 14px;
         vertical-align: middle;
-        color: #333333;
+        color: #D6D6D6;
+        background: #FFFFFF;
+        border: none;
+        outline: none;
         &::placeholder {
+            font-weight: 300;
+            font-size: 14px;
             color: #D6D6D6;
         }
     }
     &__submit {
         width: 101px;
         height: 30px;
-        margin-left: -8px;
         font-weight: 500;
         line-height: normal;
         font-size: 12px;
         text-align: center;
         vertical-align: middle;
         color: #FFFFFF;
+        border: none;
         background: #A1B3BF;
+        outline: none;
         &:hover {
             color: #000000;
             cursor: pointer;
@@ -755,7 +804,8 @@ a:hover {
             display: flex;
             max-width: 996px;
             margin: 0 auto;
-            padding-top: 38px; // justify-content: space-between;
+            padding-top: 35px; 
+            justify-content: space-between;
             text-align: center;
             font-weight: bold;
             font-size: 16px;

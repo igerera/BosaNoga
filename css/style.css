@@ -333,8 +333,6 @@ a:hover {
   width: 1200px;
   height: 357px;
   margin: auto;
-  margin-top: 25px;
-  border: 1px solid black;
   position: relative;
   overflow: hidden;
 }
@@ -411,7 +409,7 @@ a:hover {
 .new-deals {
   max-width: 1036px;
   margin: 0 auto;
-  padding: 40px 20px 50px;
+  padding: 44px 20px 50px;
 }
 .new-deals__menu {
   padding-top: 23px;
@@ -671,7 +669,7 @@ a:hover {
 .subscribe {
   min-height: 92px;
   height: 1px;
-  margin: 35px auto 0;
+  margin: 30px auto 0;
   background: url(../img/footer-waves.png) top center no-repeat, linear-gradient(92.54deg, #EBE5E9 5.3%, #D1E3E5 95.53%);
 }
 .subscribe__wrapper {
@@ -689,35 +687,85 @@ a:hover {
   color: #333333;
   mix-blend-mode: normal;
 }
-.subscribe__radio-label {
-  margin-right: 15px;
+.subscribe__radios {
+  display: flex;
+  align-items: center;
+}
+.subscribe__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+.subscribe__radio:checked + .subscribe__radio_text:after {
+  opacity: 1;
+}
+.subscribe__radio_label {
+  margin-right: 10px;
   font-weight: 300;
   font-size: 16px;
   color: #333333;
 }
+.subscribe__radio_text {
+  position: relative;
+  padding: 0 0 0 25px;
+  cursor: pointer;
+}
+.subscribe__radio_text::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FFF;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background: #dde4e8;
+}
+.subscribe__radio_text::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #A1B3BF;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .2s;
+}
 .subscribe__email {
-  width: 208px;
+  width: 204px;
   height: 30px;
-  background: #FFFFFF;
+  padding: 0 10px;
+  margin-left: 8px;
   font-weight: 300;
   font-size: 14px;
   vertical-align: middle;
-  color: #333333;
+  color: #D6D6D6;
+  background: #FFFFFF;
+  border: none;
+  outline: none;
 }
 .subscribe__email::placeholder {
+  font-weight: 300;
+  font-size: 14px;
   color: #D6D6D6;
 }
 .subscribe__submit {
   width: 101px;
   height: 30px;
-  margin-left: -8px;
   font-weight: 500;
   line-height: normal;
   font-size: 12px;
   text-align: center;
   vertical-align: middle;
   color: #FFFFFF;
+  border: none;
   background: #A1B3BF;
+  outline: none;
 }
 .subscribe__submit:hover {
   color: #000000;
@@ -731,7 +779,8 @@ a:hover {
   display: flex;
   max-width: 996px;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 35px;
+  justify-content: space-between;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
