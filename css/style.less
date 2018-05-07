@@ -124,6 +124,7 @@ a:hover {
         }
         &__profile {
             flex: 1;
+            position: relative;
         }
         &__pics {
             display: flex;
@@ -137,12 +138,11 @@ a:hover {
             margin: 0 auto;
             background-image: url(../img/header__profile_sprite.png);
             background-repeat: no-repeat;
-           
             &_search {
                 position: relative;
                 z-index: 1;
                 background-position: -64px 0;
-                &_is-hidden{
+                &_is-hidden {
                     opacity: 0;
                 }
             }
@@ -209,8 +209,8 @@ a:hover {
             display: none;
             &_active {
                 position: absolute;
-                right: 342px;
-                bottom: 50px;
+                right: 200px;
+                bottom: -2px;
                 display: block;
                 width: 233px;
                 height: 38px;
@@ -342,8 +342,15 @@ a:hover {
 }
 
 .slider {
-    &__picture {
+    &__pictures {
         position: relative;
+        width: 1200px;
+        height: 357px;
+        margin: auto;
+        margin-top: 25px;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
         .h2 {
             position: absolute;
             right: 4px;
@@ -356,6 +363,33 @@ a:hover {
             text-align: center;
             color: #FFFFFF;
             background: linear-gradient(270deg, rgba(161, 179, 191, 0.8) 72.59%, rgba(161, 179, 191, 0) 98.05%);
+        }
+    }
+    &__image {
+        width: 1200px;
+        height: 357px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        &_1{
+            background: url(../img/slider.jpg);
+            animation-delay: 7.5s;
+        }
+        &_2{
+            background: url(../img/slider.jpg);
+            animation-delay: 5s;
+        }
+        &_3{
+            background: url(../img/slider.jpg);
+            animation-delay: 2.5s;
+        }
+        &_4{
+            background: url(../img/slider.jpg);
+            animation-delay: 0s;
         }
     }
     &__arrow {
@@ -849,5 +883,30 @@ a:hover {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+@keyframes slide {
+    from {
+        top: 0;
+        left: 0;
+    }
+    12.5% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(-1200px, 0);
+    }
+    36% {
+        transform: translate(-1200px, 357px);
+    }
+    37% {
+        transform: translate(1200px, 357px);
+    }
+    87.5% {
+        transform: translate(1200px, 0);
+    }
+    to {
+        transform: (0px);
     }
 }
