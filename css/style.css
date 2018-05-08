@@ -602,7 +602,7 @@ a:hover {
   color: #333333;
 }
 .sales-and-news__new a:hover {
-  color: #ffffff;
+  text-decoration: none;
 }
 .sales-and-news__arrow_up {
   background-position: -90px -30px;
