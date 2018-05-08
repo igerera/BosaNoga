@@ -1,4 +1,5 @@
-function headerProfile() {
+//Функции видимости блока корзина и профиля
+function headerHiddenPanelProfileVisibility() {
     let block = document.querySelector('.header-main__hidden-panel');
     let blockActive = document.querySelector('.header-main__hidden-panel_not-hidden');
     let menu = document.querySelector('.header-main__pic_profile_menu');
@@ -14,7 +15,7 @@ function headerProfile() {
 
 }
 
-function headerBasket() {
+function headerHiddenPanelBasketVisibility() {
     let block = document.querySelector('.header-main__hidden-panel');
     let blockActive = document.querySelector('.header-main__hidden-panel_not-hidden');
     let menu = document.querySelector('.header-main__pic_basket_menu');
@@ -30,7 +31,8 @@ function headerBasket() {
 
 }
 
-function headerSearch() {
+//Функция видимости меню поиска
+function headerMainSearchVisibility() {
     let block = document.querySelector('.header-main__search');
     let block2 = document.querySelector('.header-main__pic_search');
     block.classList.toggle('header-main__search_active');
@@ -39,11 +41,11 @@ function headerSearch() {
 }
 
 //Видимость блока корзина и профиля
-let profileHeader = document.querySelector('.header-main__pic_profile');
-let basketHeader = document.querySelector('.header-main__pic_basket');
-profileHeader.onclick = headerProfile;
-basketHeader.onclick = headerBasket;
+let headerProfile = document.querySelector('.header-main__pic_profile');
+let headerBasket = document.querySelector('.header-main__pic_basket');
+headerProfile.onclick = headerHiddenPanelProfileVisibility;
+headerBasket.onclick = headerHiddenPanelBasketVisibility;
 
 //Видимость меню поиска
-let searchHeader = document.querySelector('.header-main__pic_search');
-searchHeader.onclick = headerSearch;
+let headerSearch = document.querySelector('.header-main__pic_search');
+headerSearch.onclick = headerMainSearchVisibility;
