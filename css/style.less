@@ -345,13 +345,12 @@ a:hover {
 .slider {
     &__pictures {
         position: relative;
+        z-index: 2;
         width: 1200px;
-        height: 357px;
-        margin: auto;
-        position: relative;
-        overflow: hidden;
+        height: 357px; // margin: auto;
         .h2 {
             position: absolute;
+            z-index: 5;
             right: 4px;
             top: 42px;
             height: 98px;
@@ -365,33 +364,20 @@ a:hover {
         }
     }
     &__image {
-        width: 1200px;
-        height: 357px;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
-        animation-name: slide;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        &_1 {
-            background: url(../img/slider.jpg);
-            animation-delay: 7.5s;
-        }
-        &_2 {
-            background: url(../img/slider.jpg);
-            animation-delay: 5s;
-        }
-        &_3 {
-            background: url(../img/slider.jpg);
-            animation-delay: 2.5s;
-        }
-        &_4 {
-            background: url(../img/slider.jpg);
-            animation-delay: 0s;
+        height: auto;
+        width: 100%;
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
         }
     }
     &__arrow {
+        z-index: 3;
         top: 45%;
         &_left {
             left: 7px;
@@ -405,17 +391,23 @@ a:hover {
     &__circles {
         display: flex;
         position: absolute;
-        bottom: 15px;
+        z-index: 3;
+        bottom: 20px;
         left: 48%;
     }
     &__circle {
-        height: 30px;
-        width: 30px;
-        background-image: url(../img/slider_sprite.png);
-        background-repeat: no-repeat;
-        background-position: 0 -30px;
-        &_active {
-            background-position: -30px -30px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        opacity: 0.5;
+        outline: none;
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+        
+        &:nth-of-type(1) {
+            opacity: 1;
         }
         &:hover {
             cursor: pointer;
@@ -619,7 +611,8 @@ a:hover {
             font-size: 16px;
             color: #333333;
             &:hover {
-                text-decoration: none;;
+                text-decoration: none;
+                ;
             }
         }
     }
@@ -937,30 +930,5 @@ a:hover {
         &:hover {
             text-decoration: underline;
         }
-    }
-}
-
-@keyframes slide {
-    from {
-        top: 0;
-        left: 0;
-    }
-    12.5% {
-        transform: translate(0px, 0px);
-    }
-    25% {
-        transform: translate(-1200px, 0);
-    }
-    36% {
-        transform: translate(-1200px, 357px);
-    }
-    37% {
-        transform: translate(1200px, 357px);
-    }
-    87.5% {
-        transform: translate(1200px, 0);
-    }
-    to {
-        transform: (0px);
     }
 }

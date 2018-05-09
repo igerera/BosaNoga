@@ -237,15 +237,17 @@
     <section class="slider">
       <div class="wrapper">
         <div class="slider__pictures">
-          <div class="slider__image slider__image_1"></div>
-          <div class="slider__image slider__image_2"></div>
-          <div class="slider__image slider__image_3"></div>
-          <div class="slider__image slider__image_4"></div>
+          <a class="slider__image" href="#"><img src="img/slider.jpg" alt="slide picture"></a>
+          <a class="slider__image" href="#"><img src="img/slider180deg.jpeg" alt="slide picture"></a>
+          <a class="slider__image" href="#"><img src="img/slider.jpg" alt="slide picture"></a>
+          <a class="slider__image" href="#"><img src="img/slider180deg.jpeg" alt="slide picture"></a>
           <div class="arrow slider__arrow slider__arrow_left"></div>
           <div class="arrow slider__arrow slider__arrow_right"></div>
           <div class="slider__circles">
-            <div class="slider__circle"></div>
-            <div class="slider__circle slider__circle_active"></div>
+            <button class="slider__circle" value="0"></button>
+            <button class="slider__circle" value="1"></button>
+            <button class="slider__circle" value="2"></button>
+            <button class="slider__circle" value="3"></button>
           </div>
           <h2 class="h2">К ВЕСНЕ ГОТОВЫ!</h2>
         </div>
@@ -376,13 +378,13 @@
       <section class="subscribe">
         <div class="subscribe__wrapper">
           <h2 class="subscribe__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
-          <form class = "subscribe__radios" action="">
+          <form class="subscribe__radios" action="">
             <label class="subscribe__radio_label">
               <input class="subscribe__radio" type="radio" name="subscribe" value="women">
               <div class="subscribe__radio_text">Женское</div>
             </label>
             <label class="subscribe__radio_label">
-              <input class="subscribe__radio" type="radio" name="subscribe" value="men"> 
+              <input class="subscribe__radio" type="radio" name="subscribe" value="men">
               <div class="subscribe__radio_text">Мужское</div>
             </label>
             <label class="subscribe__radio_label">
