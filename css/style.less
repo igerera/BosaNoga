@@ -8,11 +8,32 @@
 
 body {
     min-width: 1205px;
+    scroll-snap-type: proximity;
 }
 
 a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #D4D4D4;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
 }
 
 .container {
@@ -228,7 +249,7 @@ a:hover {
                     color: #D6D6D6;
                     border: none;
                     outline: none;
-                    &::-webkit-input-placeholder {
+                    &::placeholder {
                         color: #D6D6D6;
                     }
                 }
@@ -244,7 +265,6 @@ a:hover {
         &__hidden-panel {
             display: none;
             min-height: 70px;
-            height: 1px;
             background: url(../img/header-waves.png) bottom center no-repeat, linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
             box-shadow: inset 0px 2px 2px rgba(41, 42, 58, 0.25);
             &_visible {
@@ -822,7 +842,6 @@ a:hover {
             font-weight: 300;
             color: #FFFFFF;
             text-decoration: none;
-            }
         }
     }
     &__info {
@@ -929,6 +948,7 @@ a:hover {
         display: none;
         &_visible {
             display: block;
+            line-height: 45px;
         }
         a {
             margin-left: 25px;
@@ -955,6 +975,7 @@ a:hover {
     height: 100%;
     padding: 3px 0;
     &__title {
+        padding-top: 12px;
         align-self: flex-start;
         font-weight: bold;
         font-size: 18px;
@@ -962,7 +983,8 @@ a:hover {
     }
     &__product-list {
         flex: 1;
-        max-height: 178px;
+        max-height: 135px;
+        padding-right: 25px;
         overflow-y: auto;
     }
     &__order-button {
@@ -1009,7 +1031,7 @@ a:hover {
     &__fill {
         flex: 1;
         align-self: flex-end;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
         border-bottom: dotted 1px #ffffff;
     }
     &__price {
@@ -1019,7 +1041,7 @@ a:hover {
     }
     &__delete {
         color: #D4D4D4;
-        &:hover{
+        &:hover {
             color: #ffffff;
             cursor: pointer;
         }
