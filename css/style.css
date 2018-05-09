@@ -623,7 +623,7 @@ a:hover {
   position: relative;
   max-width: 790px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 77px;
 }
 .about-us__title {
   margin: 30px auto 0;
@@ -660,6 +660,7 @@ a:hover {
   bottom: 0;
   left: 39.5%;
   min-width: 10px;
+  margin-bottom: 36px;
   padding: 13px 58px;
   font-size: 12px;
   line-height: 1;
@@ -678,7 +679,7 @@ a:hover {
 .subscribe {
   min-height: 92px;
   height: 1px;
-  margin: 30px auto 0;
+  margin: 0 auto;
   background: url(../img/footer-waves.png) top center no-repeat, linear-gradient(92.54deg, #EBE5E9 5.3%, #D1E3E5 95.53%);
 }
 .subscribe__wrapper {
@@ -928,6 +929,9 @@ a:hover {
 }
 .hidden-panel__profile a i {
   margin-right: 5px;
+}
+.hidden-panel__profile a:hover {
+  text-decoration: underline;
 }
 .hidden-panel__basket {
   display: none;
