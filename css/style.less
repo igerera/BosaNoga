@@ -243,10 +243,9 @@ a:hover {
         &__hidden-panel {
             display: none;
             min-height: 55px;
-            width: 100%;
             background: url(../img/header-waves.png) bottom center no-repeat, linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
             box-shadow: inset 0px 2px 2px rgba(41, 42, 58, 0.25);
-            &_not-hidden {
+            &_visible {
                 display: block;
             }
         }
@@ -405,7 +404,6 @@ a:hover {
         &:not(:first-child) {
             margin-left: 10px;
         }
-        
         &:nth-of-type(1) {
             opacity: 1;
         }
@@ -929,6 +927,33 @@ a:hover {
         background-position: 49% 0;
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+.hidden-panel {
+    padding: 10px 170px 20px 0;
+    &__profile {
+        display: none;
+        width: 100%;
+        height: 1px;
+        
+        text-align: right;
+        &_visible {
+            display: block;
+        }
+        a {
+            margin-left: 25px;
+            line-height: 35px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover{
+                text-decoration: underline;
+            }
+            i{
+                margin-right: 5px;
+            }
         }
     }
 }

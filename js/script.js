@@ -1,32 +1,26 @@
 //Видимость блока корзина и профиля
 function headerHiddenPanelProfileVisibility() {
-    let block = document.querySelector('.header-main__hidden-panel');
-    let blockActive = document.querySelector('.header-main__hidden-panel_not-hidden');
-    let menu = document.querySelector('.header-main__pic_profile_menu');
-    let menuActive = document.querySelector('.header-main__pic_profile_menu_is-active');
-    let menu2Active = document.querySelector('.header-main__pic_basket_menu_is-active');
-    if (menu2Active) {
-        menu2Active.classList.toggle('header-main__pic_basket_menu_is-active');
-        menu.classList.toggle('header-main__pic_profile_menu_is-active');
+    // document.querySelector('.hidden-panel__basket').classList.remove('hidden-panel__basket_visible');
+    document.querySelector('.hidden-panel__profile').classList.add('hidden-panel__profile_visible');
+    if (document.querySelector('.header-main__pic_basket_menu_is-active')) {
+        document.querySelector('.header-main__pic_basket_menu_is-active').classList.toggle('header-main__pic_basket_menu_is-active');
+        document.querySelector('.header-main__pic_profile_menu').classList.toggle('header-main__pic_profile_menu_is-active');
     } else {
-        block.classList.toggle('header-main__hidden-panel_not-hidden');
-        menu.classList.toggle('header-main__pic_profile_menu_is-active');
+        document.querySelector('.header-main__hidden-panel').classList.toggle('header-main__hidden-panel_visible');
+        document.querySelector('.header-main__pic_profile_menu').classList.toggle('header-main__pic_profile_menu_is-active');
     }
 
 }
 
 function headerHiddenPanelBasketVisibility() {
-    let block = document.querySelector('.header-main__hidden-panel');
-    let blockActive = document.querySelector('.header-main__hidden-panel_not-hidden');
-    let menu = document.querySelector('.header-main__pic_basket_menu');
-    let menuActive = document.querySelector('.header-main__pic_basket_menu_is-active');
-    let menu2Active = document.querySelector('.header-main__pic_profile_menu_is-active');
-    if (menu2Active) {
-        menu.classList.toggle('header-main__pic_basket_menu_is-active');
-        menu2Active.classList.toggle('header-main__pic_profile_menu_is-active');
+    document.querySelector('.hidden-panel__profile').classList.remove('hidden-panel__profile_visible');
+    // document.querySelector('.hidden-panel__basket').classList.add('hidden-panel__basket_visible');
+    if (document.querySelector('.header-main__pic_profile_menu_is-active')) {
+        document.querySelector('.header-main__pic_basket_menu').classList.toggle('header-main__pic_basket_menu_is-active');
+        document.querySelector('.header-main__pic_profile_menu_is-active').classList.toggle('header-main__pic_profile_menu_is-active');
     } else {
-        block.classList.toggle('header-main__hidden-panel_not-hidden');
-        menu.classList.toggle('header-main__pic_basket_menu_is-active');
+        document.querySelector('.header-main__hidden-panel').classList.toggle('header-main__hidden-panel_visible');
+        document.querySelector('.header-main__pic_basket_menu').classList.toggle('header-main__pic_basket_menu_is-active');
     }
 
 }
@@ -38,10 +32,8 @@ headerBasket.onclick = headerHiddenPanelBasketVisibility;
 
 //Функция видимости меню поиска
 function headerMainSearchVisibility() {
-    let block = document.querySelector('.header-main__search');
-    let block2 = document.querySelector('.header-main__pic_search');
-    block.classList.toggle('header-main__search_active');
-    block2.classList.toggle('header-main__pic_search_is-hidden');
+    document.querySelector('.header-main__search').classList.toggle('header-main__search_active');
+    document.querySelector('.header-main__pic_search').classList.toggle('header-main__pic_search_is-hidden');
 
 }
 
