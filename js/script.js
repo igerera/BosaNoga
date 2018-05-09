@@ -1,6 +1,6 @@
 //Видимость блока корзина и профиля
 function headerHiddenPanelProfileVisibility() {
-    // document.querySelector('.hidden-panel__basket').classList.remove('hidden-panel__basket_visible');
+    document.querySelector('.hidden-panel__basket').classList.remove('hidden-panel__basket_visible');
     document.querySelector('.hidden-panel__profile').classList.add('hidden-panel__profile_visible');
     if (document.querySelector('.header-main__pic_basket_menu_is-active')) {
         document.querySelector('.header-main__pic_basket_menu_is-active').classList.toggle('header-main__pic_basket_menu_is-active');
@@ -14,7 +14,7 @@ function headerHiddenPanelProfileVisibility() {
 
 function headerHiddenPanelBasketVisibility() {
     document.querySelector('.hidden-panel__profile').classList.remove('hidden-panel__profile_visible');
-    // document.querySelector('.hidden-panel__basket').classList.add('hidden-panel__basket_visible');
+    document.querySelector('.hidden-panel__basket').classList.add('hidden-panel__basket_visible');
     if (document.querySelector('.header-main__pic_profile_menu_is-active')) {
         document.querySelector('.header-main__pic_basket_menu').classList.toggle('header-main__pic_basket_menu_is-active');
         document.querySelector('.header-main__pic_profile_menu_is-active').classList.toggle('header-main__pic_profile_menu_is-active');
