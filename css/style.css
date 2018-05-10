@@ -7,7 +7,7 @@
 }
 body {
   min-width: 1205px;
-  scroll-snap-type: proximity;
+  font-family: Roboto, sans-serif;
 }
 a:hover {
   text-decoration: underline;
@@ -29,7 +29,6 @@ a:hover {
   width: 7px;
 }
 .container {
-  font-family: Roboto, sans-serif;
   max-width: 1438px;
   margin: 0 auto;
 }
