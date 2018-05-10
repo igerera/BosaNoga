@@ -51,77 +51,6 @@ a:hover {
 /*  outline: 5px dashed blue;*/
 }
 
-/*Голова каталога*/
-.product-catalogue__head {
-  display: block;
-  width: 910px;
-  height: 29px;
-
-  border-bottom: 1px solid #F4F4F4;
-
-/*  outline: 1px solid black;*/
-}
-
-.product-catalogue__head--left {
-  width: 50%;
-  float: left;
-
-  /*outline: 1px solid green;*/
-}
-
-.product-catalogue__head--right {
-  width: 50%;
-  float: right;
-  text-align: right;
-
-  /*outline: 1px solid green;*/
-}
-
-h2.section-name,
-p.sort-by {
-  display: inline-block;
-
- /* outline: 1px dashed blue;*/
-}
-
-h2.section-name {
-  padding-left: 25px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-span.amount {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
-  padding-left: 9px;
-}
-
-.sort-by {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
-  padding-right: 5px;
-}
-
-select {
-  width: 173px;
-  margin-right: 12px;
-  padding-left: 4px;
-  border-radius: 3px;
-  font-size: 14px;
-
- /* outline: 1px solid red;*/
-}
-
 /*Breadcrumbs*/
 .product-catalogue__breadcrumb-container {
   width: 100%;
@@ -166,6 +95,73 @@ ul.breadcrumb-container__breadcrumbs {
   /*outline: 1px solid orange;*/
 }
 
+/*Голова каталога*/
+.product-catalogue__head {
+  display: block;
+  width: 910px;
+  height: 29px;
+
+  border-bottom: 1px solid #F4F4F4;
+
+/*  outline: 1px solid black;*/
+}
+
+.product-catalogue__head--left {
+  width: 50%;
+  float: left;
+
+  /*outline: 1px solid green;*/
+}
+
+.product-catalogue__head--right {
+  width: 50%;
+  float: right;
+  text-align: right;
+
+  /*outline: 1px solid green;*/
+}
+
+h2.section-name,
+p.sort-by {
+  display: inline-block;
+
+ /* outline: 1px dashed blue;*/
+}
+
+h2.section-name {
+  padding-left: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+span.amount {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 9px;
+}
+
+.sort-by {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+  padding-right: 5px;
+}
+
+select {
+  width: 173px;
+  margin-right: 12px;
+  padding-left: 4px;
+  border-radius: 3px;
+  font-size: 14px;
+
+ /* outline: 1px solid red;*/
+}
 
 /*Основная часть каталога с фотками товара*/
 
@@ -182,8 +178,8 @@ ul.breadcrumb-container__breadcrumbs {
 .product-catalogue__product_favorite {
   display: block;
   position: absolute;
-  right: 14px;
-  top: 14px;
+  right: 4px;
+  top: 6px;
   height: 29px;
   width: 29px;
   background-image: url(../img/new-deals__product_favorite.png);
@@ -193,8 +189,8 @@ ul.breadcrumb-container__breadcrumbs {
 
 .product-catalogue__product_favorite:active {
   position: absolute;
-  right: 14px;
-  top: 14px;
+  right: 20px;
+  top: 20px;
   height: 29px;
   width: 29px;
   background-image: url(../img/new-deals__product_favorite_chosen.png);
@@ -205,22 +201,24 @@ ul.breadcrumb-container__breadcrumbs {
 .item-list__item-card {
   width: 305px;
   height: auto;
+
+ /* outline: 1px solid red;*/
 }
 
 .item {
-  width: 300px;
-  margin-top: 30px;
-  margin-left: 5px;
-  margin-bottom: 35px;
+  width: 281px;
+  margin-top: 27px;
+  margin-left: 23px;
+  margin-bottom: 38px;
 
-  /*outline: 3px dashed pink;*/
+  /*outline: 1px dashed pink;*/
 }
 
 .item-pic {
   position: relative;
   display: block;
-  width: 285px;
-  height: 248px;
+  width: 280.5px;
+  height: 247px;
   margin: auto;
   z-index: -1;
 
@@ -318,20 +316,17 @@ ul.breadcrumb-container__breadcrumbs {
 
 
 .item-desc {
-  width: 285px;
-  margin: auto;
+  width: 280.5px;
 
-  /*outline: 1px solid green;*/
+ /* outline: 1px solid green;*/
 }
 
 .item-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding: 12px 0 6px;
 
   /*outline: 1px solid pink;*/
 }
@@ -340,11 +335,11 @@ ul.breadcrumb-container__breadcrumbs {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  line-height: 14px;
+  padding-bottom: 3px;
   text-align: center;
   color: #D4D4D4;
 
-  /*outline: 1px solid grey;*/
+ /* outline: 1px solid grey;*/
 }
 
 span.producer {
@@ -355,19 +350,16 @@ span.producer {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
   text-align: center;
   color: #333333;
-  padding-top: 2px;
 
-  /*outline: 1px solid navy;*/
+ /* outline: 1px solid navy;*/
 }
 
 .item-price::after {
   content: " ₽";
   font-weight: 700;
   font-size: 20px;
-  line-height: 18px;
   text-align: center;
 }
 
