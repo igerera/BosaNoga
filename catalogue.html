@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bosa Noga</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-catalogue.css">
+
+  <link rel="stylesheet" href="fonts/fontawesome-free-5.0.12">
+</head>
+
+  <body>
+    
+    <!-- Шпаргалка для вёрстки пиксель-пёрфект. Ссылка может не работать, тк яндекс.диск -->
+    <img src="https://s35vla.storage.yandex.net/rdisk/4a5bc1f8c2c02018a65a8a183219f9ecb65679fb1389163b540380faf3799eb7/5af3b1fc/EsXPQZznLkmBfgeQs4a1T1Ft3GYcYc-yetGBm_-9lWJBAB4kRV6-OUvlJWaebsj4fd1FZzriGuXucanAhRWVRA==?uid=309358999&filename=Каталог_Desktop.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&fsize=1393272&hid=249d81898d6e1ad09e13a6227dd030c1&media_type=image&tknv=v2&etag=040ff742ca294e642e5771e76ee14f10&rtoken=bZry9i7IPAvq&force_default=yes&ycrid=na-961d07140ee3c8368c5ab7190242cd50-downloader3h&ts=56bd0fe937700&s=965a597a1da5b9c0a26ab1d4d96c9924e3b5650eef483df96a6de2a9fc6cc678&pb=U2FsdGVkX195uDsl3fZ0XD-FQJjCfJ0Pgs83FKouLCpIvv9CnoqrXNVssbEF_ercW2l1WadW_IEiIdNM88XjZ-axVqWU07lORDKNQ4WrScw" class="layout" alt="">
+    
+    <!-- Шапка, взял с главной -->
+    <header class="header">
+      <div class="top-menu">
+        <div class="wrapper">
+          <ul class="top-menu__items">
+            <li class="top-menu__item">
+              <a href="#">Возврат</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#">О магазине</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="top-menu__item">
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__wrapper wrapper">
+          <div class="header-main__phone">
+            <a href="tel:++7-495-790-35-03">+7 495 79 03 5 03</a>
+            <p>Ежедневно: с 09-00 до 21-00</p>
+          </div>
+          <div class="header-main__logo">
+            <a href="#">
+              <h1>
+                <img src="img/header-logo.png" alt="logotype">
+              </h1>
+            </a>
+            <p>Обувь и аксессуары для всей семьи</p>
+          </div>
+          <div class="header-main__profile">
+            <div class="header-main__pics">
+              <div class="header-main__pic header-main__pic_search">
+
+              </div>
+              <div class="header-main__pic_border"></div>
+              <div class="header-main__pic header-main__pic_profile">
+                <div class="header-main__pic_profile_menu"></div>
+              </div>
+              <div class="header-main__pic_border"></div>
+              <div class="header-main__pic header-main__pic_basket">
+                <div class="header-main__pic_basket_full">1</div>
+                <div class="header-main__pic_basket_menu"></div>
+              </div>
+            </div>
+            <form class="header-main__search" action="#">
+              <input placeholder="Поиск">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          </div>
+
+        </div>
+        <div class="header-main__hidden-panel"></div>
+      </div>
+      <nav class="main-menu">
+        <div class="wrapper">
+          <ul class="main-menu__items">
+            <li class="main-menu__item">
+              <a href="#">АКЦИИ</a>
+            </li>
+            <li class="main-menu__item main-menu__item_active">
+              <a href="#">ЖЕНСКАЯ ОБУВЬ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">МУЖСКАЯ ОБУВЬ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">ДЕТСКАЯ ОБУВЬ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">АКСЕССУАРЫ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">ДЛЯ ДОМА</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">БРЕНДЫ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">НОВИНКИ</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+    
+    <!-- Каталог товаров -->
+    <!-- Breadcrumbs -->
+    <section class="product-catalogue__breadcrumb-container">
+      <ul class="breadcrumb-container__breadcrumbs">
+        <li><a href="#">Главная</a></li> <span class="angle">></span>
+        <li><a href="#">Женская обувь</a></li>
+      </ul>
+    </section>
+    <!-- Тело каталога с левым сайдбаром -->
+    <main class="product-catalogue">
+      <!-- Левый сайдбар -->
+      <section class="left-sidebar">
+        <section class="left-sidebar__catalogue">
+          <h3>Каталог</h3>
+          <div class="left-sidebar__catalogue-list">
+            <ul>
+              <li><a href="#">Балетки</a></li>
+              <li><a href="#">Босоножки и сандалии</a></li>
+              <li><a href="#">Ботильоны</a></li>
+              <li><a href="#">Ботинки</a></li>
+              <li><a href="#">Ботфорты</a></li>
+              <li><a href="#">Галоши</a></li>
+              <li><a href="#">Тапочки</a></li>
+              <li><a href="#">Туфли</a></li>
+              <li><a href="#">Сапоги</a></li>
+            </ul>
+          </div>
+
+          <div class="separator"></div>
+       
+          <div class="left-sidebar__price">
+            <h3>Цена</h3>
+            <div class="price-slider"></div>
+          </div>
+          
+          <div class="left-sidebar__color">
+            <h3>Цвет</h3>
+            <ul>
+              <li><a href="#"><div class="color beige"></div> Бежевый</a></li>
+              <li><a href="#"><div class="color whitesnake"></div> Белый</a></li>
+              <li><a href="#"><div class="color shocking-blue"></div> Голубой</a></li>
+              <li><a href="#"><div class="color yellow"></div> Жёлтый</a></li>
+              <li><a href="#"><div class="color king-crimson"></div></a> Алый</li>
+              <li><a href="#"><div class="color deep-purple"></div> Фиолетовый</a></li>
+              <li><a href="#"><div class="color black-sabbath"></div> Чёрный</a></li>
+            </ul>
+          </div>
+
+          <div class="separator"></div>
+          
+          <div class="left-sidebar__size">
+            <h3>Размер</h3>
+            <ul>
+              <li><input type="checkbox"> 31</li>
+              <li><input type="checkbox"> 32</li>
+              <li><input type="checkbox"> 33</li>
+              <li><input type="checkbox"> 34</li>
+              <li><input type="checkbox"> 35</li>
+              <li><input type="checkbox" checked> 36</li>
+            </ul>
+          </div>
+
+          <div class="separator"></div>
+          
+          <div class="left-sidebar__heel-height">
+            <h3>Размер каблука</h3>
+          </div>
+          
+          <div class="left-sidebar__occasion">
+            <h3>Повод</h3>
+            <ul>
+              <li><a href="#">Офис</a></li>
+              <li><a href="#">Вечеринка</a></li>
+              <li><a href="#">Свадьба</a></li>
+              <li><a href="#">Спорт</a></li>
+              <li><a href="#">Путешествие</a></li>
+              <li><a href="#">Свидание</a></li>
+              <li><a href="#">Дома</a></li>
+              <li><a href="#">Произвести впечатление</a></li>
+            </ul>
+          </div>
+
+          <div class="separator"></div>
+          
+          <div class="left-sidebar__season">
+            <h3>Сезон</h3>
+          </div>
+
+          <div class="separator"></div>
+          
+          <div class="left-sidebar__brand">
+            <h3>Бренд</h3>
+            <input type="search">
+          </div>
+          
+          <div class="checkbox">
+            <input type="checkbox"> Со скидкой
+           </div> 
+          <div class="separator"></div>
+          
+          <div class="drop-down">
+            <a href="#"><span></span> Сбросить</a>
+          </div>
+        </section>
+      </section> 
+    <!-- Основной контент каталога -->
+      <section class="product-catalogue-content">
+        <!-- Голова каталога с названием раздела и сортировкой -->
+        <section class="product-catalogue__head">
+          <div class="product-catalogue__head--left">
+            <h2 class="section-name">Женская обувь</h2><span class="amount"> 1 764 товара</span>
+          </div>
+          <div class="product-catalogue__head--right">
+            <p class="sort-by">Сортировать</p>
+            <select name="" id="1">
+              <option value="">по популярности</option>
+              <option value="">по размеру</option>
+              <option value="">по производителю</option>
+            </select>
+          </div>
+        </section>
+        <!-- Список товаров каталога -->
+        <section  class="product-catalogue__item-list">
+          <!-- Товары -->
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/9842_127757.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Босоножки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+              <p class="item-price">18 520</p>
+            </div>    
+          </div>
+          
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12171_872736.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Ботинки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+              <p class="item-price">23 150</p>
+            </div>    
+          </div>
+          
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12945_889072.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Босоножки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+              <p class="item-price">5 390</p>
+            </div>    
+          </div>
+        
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12955_787050.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Кроссовки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+              <p class="item-price">6 520</p>
+            </div>    
+          </div>
+          
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12536_685885.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Резиновые полусапоги женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Menghi Shoes</span></p>
+              <p class="item-price">10 030</p>
+            </div>    
+          </div>
+          
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12734_782735.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Полусапоги женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Pegia</span></p>
+              <p class="item-price">10 140</p>
+            </div>    
+          </div>
+
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12741_817364.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Босоножки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Baldinini</span></p>
+              <p class="item-price">25 020</p>
+            </div>    
+          </div>
+
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12282_529418.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Туфли женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Baldini</span></p>
+              <p class="item-price">18 520</p>
+            </div>    
+          </div>
+
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12175_577679.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Полуботинки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+              <p class="item-price">21 830</p>
+            </div>    
+          </div>
+                 
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12176_550650.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Туфли женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+              <p class="item-price">20 830</p>
+            </div>    
+          </div>
+              
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12172_549931.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Ботинки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+              <p class="item-price">26 240</p>
+            </div>    
+          </div>
+
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/12114_913985.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Туфли женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Vittorio Virgili</span></p>
+              <p class="item-price">17 750</p>
+            </div>    
+          </div>
+          
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/11944_882553.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Ботинки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Loriblu</span></p>
+              <p class="item-price">24 700</p>
+            </div>    
+          </div>
+              
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/11612_925351.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Босоножки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+              <p class="item-price">18 520</p>
+            </div>    
+          </div>
+
+          <div class="item-list__item-card item">
+            <div class="item-pic">
+              <img src="img/catalogue-pics/11645_231488.png"  alt="">
+              <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+            </div>
+            <div class="item-desc">
+              <h4 class="item-name">Балетки женские</h4>
+              <p class="item-producer">Производитель: <span class="producer">Ballin</span></p>
+              <p class="item-price">20 730</p>
+            </div>    
+          </div>       
+        </section>
+        <!-- Пагинация под каталогом -->
+        <div class="product-catalogue__pagination text-center">
+            <ul>
+                <li class="prev"><a href="#"><span class="angle-back"><</span></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="#">99</a></li>
+                <li class="next"><a href="#"><span class="angle-forward">></span></a></li>
+            </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Слайдер внизу каталога  -->     
+    <section class="product-catalogue__lower-slider">
+      <h3>Вы смотрели:</h3>
+      <div class="lower-slider">
+        <div class="lower-slider__arrow lower-slider__arrow_left arrow"></div>
+        <div class="lower-slider__product lower-slider__product-1">
+          <a href="#"></a>
+        </div>
+        <div class="lower-slider__product lower-slider__product-2">
+          <a href="#"></a>
+        </div>
+        <div class="lower-slider__product lower-slider__product-3">
+          <a href="#"></a>
+        </div>
+        <div class="lower-slider__product lower-slider__product-4">
+          <a href="#"></a>
+        </div>
+        <div class="lower-slider__product lower-slider__product-5">
+          <a href="#"></a>
+        </div>
+        <div class="lower-slider__arrow lower-slider__arrow_right arrow"></div>
+      </div>
+    </section>
+    <!-- Футер, взял с главной -->
+    <footer class="footer">
+      <section class="subscribe">
+        <div class="subscribe__wrapper">
+          <h2 class="subscribe__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
+          <form class = "subscribe__radios" action="">
+            <label class="subscribe__radio_label">
+              <input class="subscribe__radio" type="radio" name="subscribe" value="women">
+              <div class="subscribe__radio_text">Женское</div>
+            </label>
+            <label class="subscribe__radio_label">
+              <input class="subscribe__radio" type="radio" name="subscribe" value="men"> 
+              <div class="subscribe__radio_text">Мужское</div>
+            </label>
+            <label class="subscribe__radio_label">
+              <input class="subscribe__radio" type="radio" name="subscribe" value="both" checked>
+              <div class="subscribe__radio_text">Всё</div>
+            </label>
+            <input class="subscribe__email" type="email" placeholder="Ваш e-mail">
+            <input class="subscribe__submit" type="submit" value="ПОДПИСАТЬСЯ">
+          </form>
+        </div>
+      </section>
+      <div class="footer__bottom">
+        <div class="wrapper">
+          <div class="footer__menus">
+            <div class="footer__menu footer__menu_about">
+              О магазине
+              <ul>
+                <li>
+                  <a href="#">BosaNoga</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Пресса</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu footer__menu_collection">Коллекции
+              <ul>
+                <li>
+                  <a href="#">Обувь</a>
+                </li>
+                <li>
+                  <a href="#">Аксессуары</a>
+                </li>
+                <li>
+                  <a href="#">Для дома</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu footer__menu_help">Помощь
+              <ul>
+                <li>
+                  <a href="#">Как купить?</a>
+                </li>
+                <li>
+                  <a href="#">Возврат</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__info">
+            <h3 class="footer__info_title">Принимаем к оплате:</h3>
+            <div class="footer__paid-systems">
+              <div class="footer__paid footer__paid_paypal"></div>
+              <div class="footer__paid footer__paid_master-card"></div>
+              <div class="footer__paid footer__paid_visa"></div>
+              <div class="footer__paid footer__paid_yandex"></div>
+              <div class="footer__paid footer__paid_webmoney"></div>
+              <div class="footer__paid footer__paid_qiwi"></div>
+            </div>
+            <div class="footer__social-links">
+              <h3 class="footer__social-links_title">Мы в соц.сетях:
+              </h3>
+              <div class="footer__social-link footer__social-link_twitter"></div>
+              <div class="footer__social-link footer__social-link_vk"></div>
+            </div>
+            <div class="footer__copyright">2009-2018 © BosaNoga.ru — модный интернет-магазин обуви
+              <br> и аксессуаров. Все права защищены. Доставка по всей России!</div>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__phone" href="tel:+7-495-790-35-03">+7 495 79 03 5 03</a>
+            <p class="footer__phone_text">Ежедневно: с 09-00 до 21-00</p>
+            <a class="footer__email" href="mailto:office@bosanoga.ru">office@bosanoga.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Скрипты -->
+    <script src="js/script.js"></script>  
+  </body>
+</html>
