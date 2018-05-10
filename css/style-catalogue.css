@@ -1,9 +1,9 @@
 html,
 body {
-  max-width: 1440px;
+  max-width: 1438px;
   min-width: 1205px;
-  height: 2981px;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -179,7 +179,7 @@ ul.breadcrumb-container__breadcrumbs {
 }
 
 /*Сердечки для избранного товара*/
-.product-catalogue__product_favorite a {
+.product-catalogue__product_favorite {
   display: block;
   position: absolute;
   right: 14px;
@@ -188,9 +188,10 @@ ul.breadcrumb-container__breadcrumbs {
   width: 29px;
   background-image: url(../img/new-deals__product_favorite.png);
   background-repeat: no-repeat;
+
 }
 
-.product-catalogue__product_favorite a:active {
+.product-catalogue__product_favorite:active {
   position: absolute;
   right: 14px;
   top: 14px;
@@ -227,16 +228,94 @@ ul.breadcrumb-container__breadcrumbs {
   /*outline: 1px solid blue;*/
 }
 
-/*****/
-/*Сначала думал зайти через псевдоэлемент*/
+.item-pic-1 {
+  position: relative;
+  top: 12px;
+  left: 9px;
+}
 
-/*.item-pic::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "Серд";
-}*/
-/*****/
+.item-pic-2 {
+ 
+}
+
+.item-pic-3 {
+  position: relative;
+  top: 4px;
+  left: 18px;
+}
+
+.item-pic-4 {
+  position: relative;
+  top: 23px;
+  left: 9px;
+}
+
+.item-pic-5 {
+  position: relative;
+  top: 5px;
+  left: 47px;
+}
+
+.item-pic-6 {
+  position: relative;
+  top: 8px;
+  left: 35px;
+}
+
+.item-pic-7 {
+  position: relative;
+  top: 38px;
+  left: 10px;
+}
+
+.item-pic-8 {
+  position: relative;
+  top: 14px;
+  left: 32px;
+}
+
+.item-pic-9 {
+  position: relative;
+  top: 47px;
+  left: 11px;
+}
+
+.item-pic-10 {
+  position: relative;
+  top: 18px;
+  left: 29px;
+}
+
+.item-pic-11 {
+  position: relative;
+  top: 3px;
+  left: 23px;
+}
+
+.item-pic-12 {
+  position: relative;
+  top: 41px;
+  left: 19px;
+}
+
+.item-pic-13 {
+  position: relative;
+  top: 24px;
+  left: 22px;
+}
+
+.item-pic-14 {
+  position: relative;
+  top: 47px;
+  left: 13px;
+}
+
+.item-pic-15 {
+  position: relative;
+  top: 60px;
+  left: 11px;
+}
+
 
 .item-desc {
   width: 285px;
@@ -327,13 +406,13 @@ span.producer {
 span.angle-back {
   width: 9px;
   height: 20px;
-  background: url();
+  background: url(../);
 }
 
 span.angle-forward {
   width: 9px;
   height: 20px;
-  background: url();
+  background: url(../);
 }
 
 /*Выравнивание текста в pagination*/
