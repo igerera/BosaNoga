@@ -8,225 +8,70 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-order.css">
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="top-menu">
-          <div class="wrapper">
-            <ul class="top-menu__items">
-              <li class="top-menu__item"><a href="#">Возврат</a></li>
-              <li class="top-menu__item"><a href="#">Доставка и оплата</a></li>
-              <li class="top-menu__item"><a href="#">О магазине</a></li>
-              <li class="top-menu__item"><a href="#">Контакты</a></li>
-              <li class="top-menu__item"><a href="#">Новости</a></li>
-            </ul>
+      <div class="site-path">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Корзина</a></li>
+          <li><a href="#">Оформление заказа</a></li>
+        </ul>
+      </div>
+      <section class="order-process">
+        <h2 class="order-process__title">Оформление заказа</h2>
+        <div class="order-process__basket order-basket">
+          <div class="order-basket__title">В ВАШЕЙ КОРЗИНЕ:</div>
+          <div class="order-basket__item-list basket-item-list">
+            <div class="basket-item-list__pic"></div>
+            <div class="basket-item-list__product">
+              <div class="basket-item-list__product-name">Босоножки женские</div>
+              <div class="basket-item-list__size">Размер: <span>37</span></div>
+              <div class="basket-item-list__producer">Производитель: <span>Albano</span></div>
+              <div class="basket-item-list__color">Цвет: <span>Черный</span></div>
+            </div>
+            <div class="basket-item-list__quantity">1</div>
+            <div class="basket-item-list__price">5 950 <i class="fa fa-rub" aria-hidden="true"></i></div>
           </div>
+          <div class="order-basket__summ">Итого:<span>12 050 </span><i class="fa fa-rub" aria-hidden="true"></i></div>
         </div>
-        <div class="header-main">
-          <div class="header-main__wrapper wrapper">
-            <div class="header-main__phone"><a href="tel:++7-495-790-35-03">+7 495 79 03 5 03</a>
-              <p>Ежедневно: с 09-00 до 21-00</p>
-            </div>
-            <div class="header-main__logo"><a href="#">
-                <h1><img src="img/header-logo.png" alt="logotype"></h1></a>
-              <p>Обувь и аксессуары для всей семьи</p>
-            </div>
-            <div class="header-main__profile">
-              <div class="header-main__pics">
-                <div class="header-main__pic header-main__pic_search"></div>
-                <div class="header-main__pic_border"></div>
-                <div class="header-main__pic header-main__pic_profile">
-                  <div class="header-main__pic_profile_menu"></div>
-                </div>
-                <div class="header-main__pic_border"></div>
-                <div class="header-main__pic header-main__pic_basket">
-                  <div class="header-main__pic_basket_full">1</div>
-                  <div class="header-main__pic_basket_menu"></div>
-                </div>
-              </div>
-              <form class="header-main__search" action="#">
-                <input placeholder="Поиск"><i class="fa fa-search" aria-hidden="true"></i>
-              </form>
-            </div>
-          </div>
-          <div class="header-main__hidden-panel hidden-panel">
-            <div class="hidden-panel__profile"><a href="#">Личный кабинет</a><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Избранное</a><a href="#">Выйти</a></div>
-            <div class="hidden-panel__basket basket-dropped">
-              <div class="basket-dropped__title">В вашей корзине:</div>
-              <div class="basket-dropped__product-list product-list">
-                <div class="product-list__item">
-                  <div class="product-list__pic"><img src="img/product-list__pic_1.jpg" alt="product"></div><a class="product-list__product" href="#">Ботинки женские, Baldinini</a>
-                  <div class="product-list__fill"></div>
-                  <div class="product-list__price">12 360<i class="fa fa-rub" aria-hidden="true"></i></div>
-                  <div class="product-list__delete"><i class="fa fa-times" aria-hidden="true"></i></div>
-                </div>
-                <div class="product-list__item">
-                  <div class="product-list__pic"><img src="img/product-list__pic_1.jpg" alt="product"></div><a class="product-list__product" href="#">Ботинки женские, Baldinini</a>
-                  <div class="product-list__fill"></div>
-                  <div class="product-list__price">12 360<i class="fa fa-rub" aria-hidden="true"></i></div>
-                  <div class="product-list__delete"><i class="fa fa-times" aria-hidden="true"></i></div>
-                </div>
-                <div class="product-list__item">
-                  <div class="product-list__pic"><img src="img/product-list__pic_1.jpg" alt="product"></div><a class="product-list__product" href="#">Ботинки женские, Baldinini</a>
-                  <div class="product-list__fill"></div>
-                  <div class="product-list__price">12 360<i class="fa fa-rub" aria-hidden="true"></i></div>
-                  <div class="product-list__delete"><i class="fa fa-times" aria-hidden="true"></i></div>
-                </div>
-                <div class="product-list__item">
-                  <div class="product-list__pic"><img src="img/product-list__pic_1.jpg" alt="product"></div><a class="product-list__product" href="#">Ботинки женские, Baldinini</a>
-                  <div class="product-list__fill"></div>
-                  <div class="product-list__price">12 360<i class="fa fa-rub" aria-hidden="true"></i></div>
-                  <div class="product-list__delete"><i class="fa fa-times" aria-hidden="true"></i></div>
-                </div>
-              </div>
-              <button class="basket-dropped__order-button">Оформить заказ</button>
-            </div>
-          </div>
-        </div>
-        <nav class="main-menu">
-          <div class="wrapper">
-            <ul class="main-menu__items">
-              <li class="main-menu__item"><a href="#">АКЦИИ</a></li>
-              <li class="main-menu__item main-menu__item_active"><a href="#">ЖЕНСКАЯ ОБУВЬ</a></li>
-              <li class="main-menu__item"><a href="#">МУЖСКАЯ ОБУВЬ</a></li>
-              <li class="main-menu__item"><a href="#">ДЕТСКАЯ ОБУВЬ</a></li>
-              <li class="main-menu__item"><a href="#">АКСЕССУАРЫ</a></li>
-              <li class="main-menu__item"><a href="#">ДЛЯ ДОМА</a></li>
-              <li class="main-menu__item"><a href="#">БРЕНДЫ</a></li>
-              <li class="main-menu__item"><a href="#">НОВИНКИ</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="dropped-menu">
-          <div class="wrapper">
-            <div class="dropped-menu__lists">
-              <h3 class="dropped-menu__list-title">ПОВОД:</h3>
-              <ul class="dropped-menu__list">
-                <li class="dropped-menu__item"><a href="#">Офис</a></li>
-                <li class="dropped-menu__item"><a href="#">Вечеринка</a></li>
-                <li class="dropped-menu__item"><a href="#">Свадьба</a></li>
-                <li class="dropped-menu__item"><a href="#">Спорт</a></li>
-                <li class="dropped-menu__item"><a href="#">Море</a></li>
-                <li class="dropped-menu__item"><a href="#">Дом</a></li>
-                <li class="dropped-menu__item"><a href="#">Повседневное</a></li>
-              </ul>
-            </div>
-            <div class="dropped-menu__lists dropped-menu__lists_three-coloumns">
-              <h3 class="dropped-menu__list-title">КАТЕГОРИИ:</h3>
-              <ul class="dropped-menu__list">
-                <li class="dropped-menu__item"><a href="#">Балетки</a></li>
-                <li class="dropped-menu__item"><a href="#">Босоножки</a></li>
-                <li class="dropped-menu__item"><a href="#">Ботильоны</a></li>
-                <li class="dropped-menu__item"><a href="#">Ботинки</a></li>
-                <li class="dropped-menu__item"><a href="#">Ботфорты</a></li>
-                <li class="dropped-menu__item"><a href="#">Галоши</a></li>
-                <li class="dropped-menu__item"><a href="#">Кеды и кроссовки</a></li>
-                <li class="dropped-menu__item"><a href="#">Мокасины</a></li>
-                <li class="dropped-menu__item"><a href="#">Полусапоги</a></li>
-                <li class="dropped-menu__item"><a href="#">Резиновые сапоги</a></li>
-                <li class="dropped-menu__item"><a href="#">Сабо</a></li>
-                <li class="dropped-menu__item"><a href="#">Сапоги</a></li>
-                <li class="dropped-menu__item"><a href="#">Сникерсы</a></li>
-                <li class="dropped-menu__item"><a href="#">Тапочки</a></li>
-                <li class="dropped-menu__item"><a href="#">Туфли</a></li>
-                <li class="dropped-menu__item"><a href="#">Шлёпанцы и вьетнамки</a></li>
-              </ul>
-            </div>
-            <div class="dropped-menu__lists">
-              <h3 class="dropped-menu__list-title">СЕЗОН:</h3>
-              <ul class="dropped-menu__list">
-                <li class="dropped-menu__item"><a href="#">Зима</a></li>
-                <li class="dropped-menu__item"><a href="#">Весна</a></li>
-                <li class="dropped-menu__item"><a href="#">Лето</a></li>
-                <li class="dropped-menu__item"><a href="#">Осень</a></li>
-              </ul>
-            </div>
-            <div class="dropped-menu__lists">
-              <h3 class="dropped-menu__list-title">БРЕНДЫ:</h3>
-              <ul class="dropped-menu__list">
-                <li class="dropped-menu__item"><a href="#">Albano</a></li>
-                <li class="dropped-menu__item"><a href="#">Ballin</a></li>
-                <li class="dropped-menu__item"><a href="#">Baldinini</a></li>
-                <li class="dropped-menu__item"><a href="#">Damlax</a></li>
-                <li class="dropped-menu__item"><a href="#">Pegia</a></li>
-                <li class="dropped-menu__item"><a href="#">Renzi</a></li>
-                <li class="dropped-menu__item"><a href="#">Все</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <footer class="footer">
-        <section class="subscribe">
-          <div class="subscribe__wrapper">
-            <h2 class="subscribe__title">ПОДПИСАТЬСЯ НА РАССЫЛКУ ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ</h2>
-            <form class="subscribe__radios" action="">
-              <label class="subscribe__radio_label">
-                <input class="subscribe__radio" type="radio" name="subscribe" value="women">
-                <div class="subscribe__radio_text">Женское</div>
+        <div class="order-process__confirmed">
+          <form action="#">
+            <div class="order-process__delivery">
+              <h3 class="h3">КОМУ И КУДА ДОСТАВИТЬ?</h3>
+              <label class="order-process__radio_label">
+                <div class="order-process__radio_text">Имя</div>
+                <input class="order-process__radio" type="text" name="delivery" placeholder="Представьтесь, пожалуйста">
               </label>
-              <label class="subscribe__radio_label">
-                <input class="subscribe__radio" type="radio" name="subscribe" value="men">
-                <div class="subscribe__radio_text">Мужское</div>
+              <label class="order-process__radio_label">
+                <div class="order-process__radio_text">Телефон</div>
+                <input class="order-process__radio" type="phone" name="delivery" placeholder="Номер в любом формате">
               </label>
-              <label class="subscribe__radio_label">
-                <input class="subscribe__radio" type="radio" name="subscribe" value="both" checked="">
-                <div class="subscribe__radio_text">Всё</div>
+              <label class="order-process__radio_label">
+                <div class="order-process__radio_text">Адрес</div>
+                <input class="order-process__radio" type="text" name="delivery" placeholder="Ваша покупка будет доставлена по этому адресу">
               </label>
-              <input class="subscribe__email" type="email" placeholder="Ваш e-mail">
-              <input class="subscribe__submit" type="submit" value="ПОДПИСАТЬСЯ">
-            </form>
-          </div>
-        </section>
-        <div class="footer__bottom">
-          <div class="wrapper">
-            <div class="footer__menus">
-              <div class="footer__menu footer__menu_about">О магазине
-                <ul>
-                  <li><a href="#">BosaNoga</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Пресса</a></li>
-                </ul>
-              </div>
-              <div class="footer__menu footer__menu_collection">Коллекции
-                <ul>
-                  <li><a href="#">Обувь</a></li>
-                  <li><a href="#">Аксессуары</a></li>
-                  <li><a href="#">Для дома</a></li>
-                </ul>
-              </div>
-              <div class="footer__menu footer__menu_help">Помощь
-                <ul>
-                  <li><a href="#">Как купить?</a></li>
-                  <li><a href="#">Возврат</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </div>
             </div>
-            <div class="footer__info">
-              <h3 class="footer__info_title">Принимаем к оплате:</h3>
-              <div class="footer__paid-systems">
-                <div class="footer__paid footer__paid_paypal"></div>
-                <div class="footer__paid footer__paid_master-card"></div>
-                <div class="footer__paid footer__paid_visa"></div>
-                <div class="footer__paid footer__paid_yandex"></div>
-                <div class="footer__paid footer__paid_webmoney"></div>
-                <div class="footer__paid footer__paid_qiwi"></div>
-              </div>
-              <div class="footer__social-links">
-                <h3 class="footer__social-links_title">Мы в соц.сетях:</h3>
-                <div class="footer__social-link footer__social-link_twitter"></div>
-                <div class="footer__social-link footer__social-link_vk"></div>
-              </div>
-              <div class="footer__copyright">2009-2018 © BosaNoga.ru — модный интернет-магазин обуви<br> и аксессуаров. Все права защищены. Доставка по всей России!</div>
+            <div class="order-process__paid">
+              <h3 class="h3">ХОТИТЕ ОПЛАТИТЬ ОНЛАЙН ИЛИ КУРЬЕРУ ПРИ ПОЛУЧЕНИИ?</h3>
+              <label class="order-process__radio_label">
+                <input class="order-process__radio" type="radio" name="paid" value="card-online">
+                <div class="order-process__radio_text">Картой онлайн</div>
+              </label>
+              <label class="order-process__radio_label">
+                <input class="order-process__radio" type="radio" name="paid" value="card-courier" checked="">
+                <div class="order-process__radio_text">Картой курьеру</div>
+              </label>
+              <label class="order-process__radio_label">
+                <input class="order-process__radio" type="radio" name="paid" value="cash">
+                <div class="order-process__radio_text">Наличными курьеру</div>
+              </label>
             </div>
-            <div class="footer__contacts"><a class="footer__phone" href="tel:+7-495-790-35-03">+7 495 79 03 5 03</a>
-              <p class="footer__phone_text">Ежедневно: с 09-00 до 21-00</p><a class="footer__email" href="mailto:office@bosanoga.ru">office@bosanoga.ru</a>
-            </div>
-          </div>
+            <input class="order-process__submit" type="submit" value="Подтвердить заказ">
+          </form>
         </div>
-      </footer>
+      </section>
     </div>
   </body>
 </html>
