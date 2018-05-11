@@ -16,7 +16,7 @@
   <body>
     
     <!-- Шпаргалка для вёрстки пиксель-пёрфект. Ссылка может не работать, тк яндекс.диск -->
-    <img src="img/layout/Каталог_Desktop.png" class="layout" alt="">
+    <img src="../BosaNoga-in-process/img/catalogue-pics/Каталог_Desktop (1).png" class="layout" alt="">
     
     <!-- Шапка, взял с главной -->
     <header class="header">
@@ -123,10 +123,12 @@
     <!-- Тело каталога с левым сайдбаром -->
     <main class="product-catalogue">
       <!-- Левый сайдбар -->
-      <section class="left-sidebar">
-        <section class="left-sidebar__catalogue">
+      <section class="sidebar">
+
+        <section class="sidebar__division">
+          <div class="sidebar__catalogue-list">
           <h3>Каталог</h3>
-          <div class="left-sidebar__catalogue-list">
+          <div class="opener"></div>
             <ul>
               <li><a href="#">Балетки</a></li>
               <li><a href="#">Босоножки и сандалии</a></li>
@@ -139,16 +141,22 @@
               <li><a href="#">Сапоги</a></li>
             </ul>
           </div>
+        </section>
 
-          <div class="separator"></div>
-       
-          <div class="left-sidebar__price">
-            <h3>Цена</h3>
-           <div class="price-slider">
+        <div class="separator"></div>
+
+        <section class="sidebar__division">
+            <div class="sidebar__price">
+              <h3>Цена</h3>
+             <div class="price-slider">
+              </div>
             </div>
-          </div>
-          
-          <div class="left-sidebar__color">
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="sidebar__division">
+          <div class="sidebar__color">
             <h3>Цвет</h3>
             <ul>
               <li><a href="#"><div class="color beige"></div> Бежевый</a></li>
@@ -160,28 +168,40 @@
               <li><a href="#"><div class="color black-sabbath"></div> Чёрный</a></li>
             </ul>
           </div>
+        </section>
 
-          <div class="separator"></div>
-          
-          <div class="left-sidebar__size">
+        <div class="separator"></div>
+            
+        <section class="sidebar__division">
+          <div class="sidebar__size">
             <h3>Размер</h3>
             <ul>
-              <li><input type="checkbox"> 31</li>
-              <li><input type="checkbox"> 32</li>
-              <li><input type="checkbox"> 33</li>
-              <li><input type="checkbox"> 34</li>
-              <li><input type="checkbox"> 35</li>
-              <li><input type="checkbox" checked> 36</li>
+              <div class="list-1">
+                <li><input type="checkbox"> <span class="list-size">31</span></li>
+                <li><input type="checkbox"> <span class="list-size">33</span></li>
+                <li><input type="checkbox"> <span class="list-size">35</span></li>
+              </div>
+              <div class="list-2">
+                <li><input type="checkbox"> <span class="list-size">32</span></li>
+                <li><input type="checkbox"> <span class="list-size">34</span></li>
+                <li><input type="checkbox" checked> <span class="list-size">36</span></li>
+              </div>
             </ul>
           </div>
+        </section>
 
-          <div class="separator"></div>
-          
-          <div class="left-sidebar__heel-height">
+        <div class="separator"></div>
+            
+        <section class="sidebar__division">    
+          <div class="sidebar__heel-height">
             <h3>Размер каблука</h3>
           </div>
-          
-          <div class="left-sidebar__occasion">
+        </section>
+
+        <div class="separator"></div>
+            
+        <section class="sidebar__division">  
+          <div class="sidebar__occasion">
             <h3>Повод</h3>
             <ul>
               <li><a href="#">Офис</a></li>
@@ -194,25 +214,35 @@
               <li><a href="#">Произвести впечатление</a></li>
             </ul>
           </div>
+        </section>
 
-          <div class="separator"></div>
-          
-          <div class="left-sidebar__season">
+        <div class="separator"></div>
+            
+        <section class="sidebar__division">
+          <div class="sidebar__season">
             <h3>Сезон</h3>
           </div>
+        </section>
 
-          <div class="separator"></div>
-          
-          <div class="left-sidebar__brand">
+        <div class="separator"></div>
+              
+        <section class="sidebar__division">
+          <div class="sidebar__brand">
             <h3>Бренд</h3>
             <input type="search">
           </div>
-          
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="sidebar__division">
           <div class="checkbox">
-            <input type="checkbox"> Со скидкой
+            <input type="checkbox"> <span class="checkbox-text">Со скидкой</span>
            </div> 
           <div class="separator"></div>
-          
+        </section>
+            
+        <section class="sidebar__division">    
           <div class="drop-down">
             <a href="#"><span></span> Сбросить</a>
           </div>
@@ -441,16 +471,16 @@
         <div class="lower-slider__product lower-slider__product-1">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__product-2">
+        <div class="lower-slider__product lower-slider__item-2">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__product-3">
+        <div class="lower-slider__product lower-slider__item-3">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__product-4">
+        <div class="lower-slider__product lower-slider__item-4">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__product-5">
+        <div class="lower-slider__product lower-slider__item-5">
           <a href="#"></a>
         </div>
         <div class="lower-slider__arrow lower-slider__arrow_right arrow"></div>
