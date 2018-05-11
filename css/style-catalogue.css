@@ -66,7 +66,6 @@ ul.breadcrumb-container__breadcrumbs li {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
   text-align: center;
 }
 
@@ -82,7 +81,6 @@ span.angle {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
   text-align: center;
 }
 
@@ -99,9 +97,7 @@ ul.breadcrumb-container__breadcrumbs {
 .product-catalogue__head {
   display: block;
   width: 910px;
-  height: 29px;
-
-  border-bottom: 1px solid #F4F4F4;
+  height: 27px;
 
 /*  outline: 1px solid black;*/
 }
@@ -168,9 +164,11 @@ select {
 .product-catalogue__item-list {
   display: flex;
   flex-wrap: wrap;
-  width: 915px;
-  margin: 0;
-  
+  justify-content: space-between;
+  width: 892px;
+  margin-left: 22px;
+  border-top: 1px solid #F4F4F4;
+
   /*outline: 1px solid green;*/
 }
 
@@ -178,8 +176,8 @@ select {
 .product-catalogue__product_favorite {
   display: block;
   position: absolute;
-  right: 4px;
-  top: 6px;
+  top: 9px;
+  right: 12px;
   height: 29px;
   width: 29px;
   background-image: url(../img/new-deals__product_favorite.png);
@@ -199,17 +197,16 @@ select {
 
 /* Карточка товара в каталоге */
 .item-list__item-card {
-  width: 305px;
+  width: 285px;
   height: auto;
 
  /* outline: 1px solid red;*/
 }
 
 .item {
-  width: 281px;
+  width: 283px;
   margin-top: 27px;
-  margin-left: 23px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   /*outline: 1px dashed pink;*/
 }
@@ -217,10 +214,11 @@ select {
 .item-pic {
   position: relative;
   display: block;
-  width: 280.5px;
+  width: 283px;
   height: 247px;
   margin: auto;
   z-index: -1;
+  overflow: hidden;
 
   outline: 1px solid #F4F4F4;
   /*outline: 1px solid blue;*/
@@ -233,7 +231,9 @@ select {
 }
 
 .item-pic-2 {
- 
+  position: relative;
+  top: 12px;
+  left: 9px;
 }
 
 .item-pic-3 {
@@ -298,8 +298,8 @@ select {
 
 .item-pic-13 {
   position: relative;
-  top: 24px;
-  left: 22px;
+  top: 20px;
+  left: 12px;
 }
 
 .item-pic-14 {
@@ -316,9 +316,9 @@ select {
 
 
 .item-desc {
-  width: 280.5px;
+  width: 283px;
 
- /* outline: 1px solid green;*/
+  outline: 1px solid green;
 }
 
 .item-name {
@@ -326,7 +326,7 @@ select {
   font-weight: 500;
   font-size: 18px;
   text-align: center;
-  padding: 12px 0 6px;
+  padding: 14px 0 5px;
 
   /*outline: 1px solid pink;*/
 }
@@ -381,7 +381,6 @@ span.producer {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 14px;
-  line-height: 16px;
   text-align: center;
 }
 
@@ -416,29 +415,29 @@ span.angle-forward {
 /*Слайдер внизу каталога, сделал по образцу твоего, как на главной с большой туфлёй по середине*/
 
 .product-catalogue__lower-slider {
-  width: 1072px;
-  height: 178px;
-  margin: 50px auto 50px;
+  width: 995px;
+  height: 180px;
+  margin: 40px auto 40px;
 
-/*  outline: 1px solid blue;*/
+  outline: 1px solid blue;
 }
 
 .product-catalogue__lower-slider h3 {
-  display: inline;
-  padding-bottom: 20px;
   font-family: 'Roboto' sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px
-  text-align left;
+  text-align: left;
+
+  outline: 1px solid red;
 }
 
 .lower-slider {
   position: relative;
-  top: 20px;
+  top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   /*outline: 1px solid red;*/
 }
@@ -472,24 +471,24 @@ span.angle-forward {
   width: 100%;
 }
 
-.lower-slider__product-1 {
-  background-image: url(../img/catalogue-pics/11612_925351.png);
+.lower-slider__item-1 {
+  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-1.png);
 }
 
-.lower-slider__product-2 {
-  background-image: url(../img/catalogue-pics/11612_925351.png);
+.lower-slider__item-2 {
+  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-2.png);
 }
 
-.lower-slider__product-3 {
-  background-image: url(../img/catalogue-pics/11612_925351.png);
+.lower-slider__item-3 {
+  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-3.png);
 }
 
-.lower-slider__product-4 {
-  background-image: url(../img/catalogue-pics/11612_925351.png);
+.lower-slider__item-4 {
+  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-4.png);
 }
 
-.lower-slider__product-5 {
-  background-image: url(../img/catalogue-pics/11612_925351.png);
+.lower-slider__item-5 {
+  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-5.png);
 }
 
 
@@ -499,13 +498,14 @@ span.angle-forward {
 .separator {
   width: 150px;
   height: 3px;
-  margin: 30px auto 0;
+  margin: 15px auto;
   background: #F4F5F2;
+
+  outline: 1px solid green;
 }
 
-.left-sidebar {
+.sidebar {
   display: inline-block;
-  flex-direction: column;
   width: 285px;
   height: auto;
   margin-left: 120px;
@@ -517,68 +517,95 @@ span.angle-forward {
   /*outline: 3px solid green;*/
 }
 
-.left-sidebar h3 {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
+.sidebar h3 {
+/*  padding-top: 20px;
+  padding-left: 21px;
+  padding-bottom: 10px;*/
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
   text-align: left;
-
 }
 
+.sidebar__division {
+  margin: 0;
+
+  outline: 1px solid red;
+}
 
 /*Списки в сайдбаре*/
 
-.left-sidebar ul {
+.sidebar ul {
   width: 240px;
-  height: 210px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   border-radius: 5px;
-  overflow: auto;
 
   background: #F4F4F4;
 }
 
-.left-sidebar ul li {
-  padding-top: 12px;
+.sidebar ul li {
+  padding-top: 13px;
   padding-left: 19px;
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
   text-align: left;
 }
 
 /*Разделы сайдбара*/
 
+/*Каталог*/
+
+.sidebar__catalogue-list h3 {
+  padding-top: 20px;
+  padding-left: 21px;
+  padding-bottom: 10px;
+}
+
+.sidebar__catalogue-list ul {
+  height: 210px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
 /*Цена*/
+.sidebar__price h3 {
+  padding-top: 22px;
+  padding-left: 23px;
+}
+
 .price-slider {
-  width: 250px;
-  height: 120px;
+  width: 240px;
+  height: 95px;
   margin: 0 auto;
   background: grey;
 }
 
 
 /*Цвет*/
-.left-sidebar__color ul {
-  width: 242px;
-  height: 150px;
+.sidebar__color h3 {
+  padding-top: 19px;
+  padding-left: 21px;
+  padding-bottom: 10px;
 }
 
-.left-sidebar__color ul li {
+.sidebar__color ul {
+  width: 242px;
+  height: 150px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.sidebar__color ul li {
   display: inline-block;
   vertical-align: top;
 }
 
-.left-sidebar__color .color {
+.sidebar__color .color {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -615,32 +642,85 @@ span.angle-forward {
 
 
 /*Размер*/
-.left-sidebar__size ul {
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 100px;
-  
+.sidebar__size h3 {
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-bottom: 10px;
 }
 
-.left-sidebar__size ul li {
-  margin-left: 0;
+.sidebar__size ul {
+  height: 105px;
+  padding-left: 10px;
+  overflow: auto;
+
+  /*outline: 1px dashed red;*/
 }
 
+.list-1 {
+  display: inline-block;
+  width: 120px;
+  float: left;
+
+  /*outline: 1px solid green;*/
+}
+
+span.list-size {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-1 li {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1px;
+}
+
+.list-2 {
+  display: inline-block;
+  width: 120px;
+
+  /*outline: 1px solid green;*/
+}
+
+.list-2 li {
+  padding-top: 5px;
+}
+
+/*Размер каблука*/
+.sidebar__heel-height h3 {
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+}
 
 /*Повод*/
-.left-sidebar__occasion {
-  padding-top: 25px;
+.sidebar__occasion h3 {
+  padding-top: 5px;
+  padding-left: 22px;
+  padding-bottom: 9px;
 }
 
-.left-sidebar__occasion ul {
+.sidebar__occasion ul {
   width: 240px;
-  height: 142px;
+  height: 140px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: auto;
+
 }
 
+/*Сезон*/
+.sidebar__season h3 {
+  padding-top: 25px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+}
 
 /*Бренд*/
-.left-sidebar__brand {
-  margin-top: -10px;
+.sidebar__brand h3 {
+  padding-top: 5px;
+  padding-left: 22px;
+  padding-bottom: 12px;
 }
 
 input[type="search"] {
@@ -655,10 +735,13 @@ input[type="search"] {
   display: block;
   padding-top: 40px;
   padding-left: 20px;
+
+}
+
+.checkbox-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
   text-align: left;
 }
 
@@ -674,9 +757,8 @@ input[type="checkbox"] {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 0 auto;
-  padding-top: 30px;
+/*  padding-top: 30px;*/
   padding-bottom: 20px;
   font-size: 18px;
-  line-height: 21px;
   text-align: center;
 }
