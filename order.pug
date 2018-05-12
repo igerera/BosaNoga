@@ -10,62 +10,54 @@ html(lang="ru")
         link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="css/style-order.css")
     body
-        .container
-            //- include blocks/header
-                <!-- main content -->
+      .container
+        include blocks/header
+        .wrapper.order-wrapper                   
             .site-path
-                ul
-                    li
+                ul.site-path__items
+                    li.site-path__item
                         a(href="#") Главная
-                    li
+                    li.site-path__item
                         a(href="#") Корзина
-                    li
+                    li.site-path__item
                         a(href="#") Оформление заказа
 
             section.order-process
                 h2.order-process__title Оформление заказа
                 .order-process__basket.order-basket
                     .order-basket__title В ВАШЕЙ КОРЗИНЕ:
-                    .order-basket__item-list.basket-item-list
-                        .basket-item-list__pic
-                        .basket-item-list__product
-                            .basket-item-list__product-name Босоножки женские
-                            .basket-item-list__size Размер: 
-                                span 37
-                            .basket-item-list__producer Производитель: 
-                                span Albano
-                            .basket-item-list__color Цвет: 
-                                span Черный
-                        .basket-item-list__quantity 1
-                        .basket-item-list__price 5 950 
-                          i.fa.fa-rub(aria-hidden='true')
+                    .order-basket__item-list
+                      include blocks/basket-item  
+                      include blocks/basket-item                    
                     .order-basket__summ Итого:
                       span 12 050 
-                      i.fa.fa-rub(aria-hidden='true')
+                         i.fa.fa-rub(aria-hidden='true')
                 .order-process__confirmed
                     form(action="#")
                         .order-process__delivery
-                            h3.h3 КОМУ И КУДА ДОСТАВИТЬ?
-                            label.order-process__radio_label
-                              .order-process__radio_text Имя
-                              input.order-process__radio(type='text', name='delivery', placeholder='Представьтесь, пожалуйста')
-                            label.order-process__radio_label
-                              .order-process__radio_text Телефон
-                              input.order-process__radio(type='phone', name='delivery', placeholder='Номер в любом формате')
-                            label.order-process__radio_label
-                              .order-process__radio_text Адрес
-                              input.order-process__radio(type='text', name='delivery', placeholder='Ваша покупка будет доставлена по этому адресу')
+                          h3.h3 КОМУ И КУДА ДОСТАВИТЬ?
+                          .order-process__delivery-form
+                            label.order-process__delivery-label
+                              .order-process__delivery-text Имя
+                              input.order-process__delivery-input(type='text', name='delivery', placeholder='Представьтесь, пожалуйста')
+                            label.order-process__delivery-label
+                              .order-process__delivery-text Телефон
+                              input.order-process__delivery-input(type='tel', name='delivery', placeholder='Номер в любом формате')
+                            label.order-process__delivery-label
+                              .order-process__delivery-text Адрес
+                              input.order-process__delivery-input.order-process__delivery-input_adress(type='text', name='delivery', placeholder='Ваша покупка будет доставлена по этому адресу')
+                          p Все поля обязательны для заполнения. Наш оператор свяжется с вами для уточнения деталей заказа.
                         .order-process__paid
-                            h3.h3 ХОТИТЕ ОПЛАТИТЬ ОНЛАЙН ИЛИ КУРЬЕРУ ПРИ ПОЛУЧЕНИИ?
-                            label.order-process__radio_label
-                              input.order-process__radio(type='radio', name='paid', value='card-online')
-                              .order-process__radio_text Картой онлайн
-                            label.order-process__radio_label
-                              input.order-process__radio(type='radio', name='paid', value='card-courier', checked='')
-                              .order-process__radio_text Картой курьеру
-                            label.order-process__radio_label
-                              input.order-process__radio(type='radio', name='paid', value='cash')
-                              .order-process__radio_text Наличными курьеру
-                        input.order-process__submit(type="submit" value="Подтвердить заказ")
-
-            //- include blocks/footer
+                           h3.h3 ХОТИТЕ ОПЛАТИТЬ ОНЛАЙН ИЛИ КУРЬЕРУ ПРИ ПОЛУЧЕНИИ?
+                           .order-process__paid-form
+                            label.order-process__paid-label
+                              input.order-process__paid-radio(type='radio', name='paid', value='card-online')
+                              span.order-process__paid_text Картой онлайн
+                            label.order-process__paid-label
+                              input.order-process__paid-radio(type='radio', name='paid', value='card-courier', checked='')
+                              span.order-process__paid_text Картой курьеру
+                            label.order-process__paid-label
+                              input.order-process__paid-radio(type='radio', name='paid', value='cash')
+                              span.order-process__paid_text Наличными курьеру
+                        input.order-process__form-submit(type="submit" value="Подтвердить заказ")
+        include blocks/footer
