@@ -50,7 +50,6 @@ window.requestAnimationFrame = (function () { // для поддержки reque
 })();
 
 function slider(f, img, button, V, Vo, arrows) {
-    console.log(button.length);
     var iii = 0,
         start = null,
         clear = 0;
@@ -95,25 +94,20 @@ function slider(f, img, button, V, Vo, arrows) {
             iii = +this.value;
             img[this.value].style.zIndex = "2";
             button[this.value].style.opacity = "1";
-            console.log(this.value);
         }
         arrows[0].onclick = function () {
-            console.log(iii);
             img[iii].style.zIndex = "0";
             button[iii].style.opacity = "0.5";
             iii--;
             iii = ((iii < 0) ? img.length - 1 : iii);
-            console.log(iii);
             img[iii].style.zIndex = "2";
             button[iii].style.opacity = "1";
         }
         arrows[1].onclick = function () {
-            console.log(iii);
             img[iii].style.zIndex = "0";
             button[iii].style.opacity = "0.5";
             iii++;
             iii = ((iii === img.length) ? 0 : iii);
-            console.log(iii);
             img[iii].style.zIndex = "2";
             button[iii].style.opacity = "1";
         }
@@ -124,5 +118,4 @@ var f = document.querySelector('.slider__pictures'),
     a = f.getElementsByClassName('slider__image'),
     button = f.getElementsByClassName('slider__circles')[0].getElementsByClassName('slider__circle'),
     arrows = f.getElementsByClassName('slider__arrow');
-console.log(arrows);
 slider(f, a, button, '4000', '1000', arrows);
