@@ -506,6 +506,10 @@ li a:hover {
   background-image: url(../img/new-deals__product_favorite.png);
   background-repeat: no-repeat;
 }
+.new-deals__product_favorite :hover {
+  background-image: url(../img/new-deals__product_favorite_chosen.png);
+  cursor: url(../img/new-deals__product_favorite_chosen.png), pointer;
+}
 .new-deals__product-info {
   padding-top: 8px;
   text-align: center;
