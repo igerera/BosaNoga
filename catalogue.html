@@ -16,7 +16,7 @@
   <body>
     
     <!-- Шпаргалка для вёрстки пиксель-пёрфект. Ссылка может не работать, тк яндекс.диск -->
-    <img src="../BosaNoga-in-process/img/catalogue-pics/Каталог_Desktop (1).png" class="layout" alt="">
+    <img src="../BosaNoga/img/catalogue-pics/Каталог_Desktop.png" class="layout" alt="">
     
     <!-- Шапка, взял с главной -->
     <header class="header">
@@ -116,19 +116,20 @@
     <!-- Breadcrumbs -->
     <section class="product-catalogue__breadcrumb-container">
       <ul class="breadcrumb-container__breadcrumbs">
-        <li><a href="#">Главная</a></li> <span class="angle">></span>
+        <li><a href="#">Главная</a></li> <span class="angle"></span>
         <li><a href="#">Женская обувь</a></li>
       </ul>
     </section>
-    <!-- Тело каталога с левым сайдбаром -->
+    <!-- Тело каталога с сайдбаром -->
     <main class="product-catalogue">
-      <!-- Левый сайдбар -->
+      <!-- Сайдбар -->
       <section class="sidebar">
 
         <section class="sidebar__division">
           <div class="sidebar__catalogue-list">
-          <h3>Каталог</h3>
-          <div class="opener"></div>
+            <div class="sidebar__division-title">
+              <h3>Каталог</h3><div class="opener-down"></div>
+            </div>
             <ul>
               <li><a href="#">Балетки</a></li>
               <li><a href="#">Босоножки и сандалии</a></li>
@@ -143,66 +144,80 @@
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
 
         <section class="sidebar__division">
             <div class="sidebar__price">
-              <h3>Цена</h3>
+              <div class="sidebar__division-title">
+                <h3>Цена</h3><div class="opener-down"></div>
+              </div>
              <div class="price-slider">
               </div>
             </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
 
         <section class="sidebar__division">
           <div class="sidebar__color">
-            <h3>Цвет</h3>
+            <div class="sidebar__division-title">
+              <h3>Цвет</h3><div class="opener-down"></div>
+            </div>
             <ul>
-              <li><a href="#"><div class="color beige"></div> Бежевый</a></li>
-              <li><a href="#"><div class="color whitesnake"></div> Белый</a></li>
-              <li><a href="#"><div class="color shocking-blue"></div> Голубой</a></li>
-              <li><a href="#"><div class="color yellow"></div> Жёлтый</a></li>
-              <li><a href="#"><div class="color king-crimson"></div></a> Алый</li>
-              <li><a href="#"><div class="color deep-purple"></div> Фиолетовый</a></li>
-              <li><a href="#"><div class="color black-sabbath"></div> Чёрный</a></li>
+              <li><a href="#"><div class="color beige"></div> <span class="color-name">Бежевый</span></a></li>
+              <li><a href="#"><div class="color whitesnake"></div> <span class="color-name">Белый</span></a></li>
+              <li><a href="#"><div class="color shocking-blue"></div> <span class="color-name">Голубой</span></a></li>
+              <li><a href="#"><div class="color yellow"></div> <span class="color-name">Жёлтый</span></a></li>
+              <li><a href="#"><div class="color king-crimson"></div> <span class="color-name">Алый</span></a></li>
+              <li><a href="#"><div class="color deep-purple"></div> <span class="color-name">Фиолетовый</span></a></li>
+              <li><a href="#"><div class="color black-sabbath"></div> <span class="color-name">Чёрный</span></a></li>
             </ul>
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
             
         <section class="sidebar__division">
           <div class="sidebar__size">
-            <h3>Размер</h3>
+            <div class="sidebar__division-title">
+              <h3>Размер</h3><div class="opener-down"></div>
+            </div>
             <ul>
               <div class="list-1">
-                <li><input type="checkbox"> <span class="list-size">31</span></li>
-                <li><input type="checkbox"> <span class="list-size">33</span></li>
-                <li><input type="checkbox"> <span class="list-size">35</span></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-31"><span class="checkbox-custom"></span> <span class="label">31</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-33"><span class="checkbox-custom"></span> <span class="label">33</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-35"><span class="checkbox-custom"></span> <span class="label">35</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-37"><span class="checkbox-custom"></span> <span class="label">37</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-39"><span class="checkbox-custom"></span> <span class="label">39</span></label></li>
               </div>
               <div class="list-2">
-                <li><input type="checkbox"> <span class="list-size">32</span></li>
-                <li><input type="checkbox"> <span class="list-size">34</span></li>
-                <li><input type="checkbox" checked> <span class="list-size">36</span></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-32"><span class="checkbox-custom"></span> <span class="label">32</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-34"><span class="checkbox-custom"></span> <span class="label">34</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-36" checked><span class="checkbox-custom"></span> <span class="label">36</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-38"><span class="checkbox-custom"></span> <span class="label">38</span></label></li>
+                <li><label><input type="checkbox" class="checkbox" name="checkbox-40"><span class="checkbox-custom"></span> <span class="label">40</span></label></li> 
               </div>
             </ul>
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
             
         <section class="sidebar__division">    
           <div class="sidebar__heel-height">
-            <h3>Размер каблука</h3>
+            <div class="sidebar__division-title">
+              <h3>Размер каблука</h3><div class="opener-up"></div>
+            </div>
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
             
         <section class="sidebar__division">  
           <div class="sidebar__occasion">
-            <h3>Повод</h3>
+            <div class="sidebar__division-title">
+              <h3>Повод</h3><div class="opener-down"></div>
+            </div>
             <ul>
               <li><a href="#">Офис</a></li>
               <li><a href="#">Вечеринка</a></li>
@@ -216,35 +231,35 @@
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
             
         <section class="sidebar__division">
           <div class="sidebar__season">
-            <h3>Сезон</h3>
+            <div class="sidebar__division-title">
+              <h3>Сезон</h3><div class="opener-up"></div>
+            </div>
           </div>
         </section>
 
-        <div class="separator"></div>
+        <div class="separator-150"></div>
               
         <section class="sidebar__division">
-          <div class="sidebar__brand">
-            <h3>Бренд</h3>
-            <input type="search">
-          </div>
-        </section>
+            <div class="sidebar__brand">
+              <h3>Бренд</h3>
+              <form action="post" class="brand-search">
+                <input type="search" class="brand-search" id="brand-search" placeholder="Поиск">
+                <input type="submit" name="" value="" class="submit">
+              </form>
+            </div>
 
-        <div class="separator"></div>
+              <label><input type="checkbox" class="checkbox" name="checkbox-disc"><span class="checkbox-discount"></span> <span class="text-discount">Со скидкой</span></label>
 
-        <section class="sidebar__division">
-          <div class="checkbox">
-            <input type="checkbox"> <span class="checkbox-text">Со скидкой</span>
-           </div> 
-          <div class="separator"></div>
+          <div class="separator-240"></div>
         </section>
             
         <section class="sidebar__division">    
           <div class="drop-down">
-            <a href="#"><span></span> Сбросить</a>
+            <a href="#"><span class="drop-down-icon"></span>Сбросить</a>
           </div>
         </section>
       </section> 
@@ -252,12 +267,12 @@
       <section class="product-catalogue-content">
         <!-- Голова каталога с названием раздела и сортировкой -->
         <section class="product-catalogue__head">
-          <div class="product-catalogue__head--left">
+          <div class="product-catalogue__section-title">
             <h2 class="section-name">Женская обувь</h2><span class="amount"> 1 764 товара</span>
           </div>
-          <div class="product-catalogue__head--right">
+          <div class="product-catalogue__sort-by">
             <p class="sort-by">Сортировать</p>
-            <select name="" id="1">
+            <select name="" id="sorting">
               <option value="">по популярности</option>
               <option value="">по размеру</option>
               <option value="">по производителю</option>
@@ -448,18 +463,20 @@
           </div>       
         </section>
         <!-- Пагинация под каталогом -->
-        <div class="product-catalogue__pagination text-center">
+        <div class="product-catalogue__pagination">
+          <div class="page-nav-wrapper">
+            <div class="angle-back"><a href="#"></a></div>
             <ul>
-                <li class="prev"><a href="#"><span class="angle-back"><</span></a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="">...</a></li>
-                <li><a href="#">99</a></li>
-                <li class="next"><a href="#"><span class="angle-forward">></span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="">...</a></li>
+              <li><a href="#">99</a></li>
             </ul>
+            <div class="angle-forward"><a href="#"></a></div>
+          </div>
         </div>
       </section>
     </main>
@@ -468,19 +485,19 @@
       <h3>Вы смотрели:</h3>
       <div class="lower-slider">
         <div class="lower-slider__arrow lower-slider__arrow_left arrow"></div>
-        <div class="lower-slider__product lower-slider__product-1">
+        <div class="lower-slider__item lower-slider__item-1">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__item-2">
+        <div class="lower-slider__item lower-slider__item-2">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__item-3">
+        <div class="lower-slider__item lower-slider__item-3">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__item-4">
+        <div class="lower-slider__item lower-slider__item-4">
           <a href="#"></a>
         </div>
-        <div class="lower-slider__product lower-slider__item-5">
+        <div class="lower-slider__item lower-slider__item-5">
           <a href="#"></a>
         </div>
         <div class="lower-slider__arrow lower-slider__arrow_right arrow"></div>
