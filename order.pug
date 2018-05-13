@@ -4,7 +4,7 @@ block pageTitle
     title Оформление заказа
 
 append pageLinks
-  link(rel="stylesheet", href="css/style-order.css")
+    link(rel="stylesheet", href="css/style-order.css")
 
 block content
     .wrapper.order-wrapper                   
@@ -55,3 +55,5 @@ block content
                                 input.order-process__paid-radio(type='radio', name='paid', value='cash')
                                 span.order-process__paid-text Наличными курьеру
                     input.order-process__form-submit(type="submit" value="Подтвердить заказ")
+        
+
