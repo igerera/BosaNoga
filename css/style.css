@@ -10,7 +10,8 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
-a:hover {
+a:hover,
+li a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -84,6 +85,7 @@ a:hover {
 }
 .header .top-menu__item a:hover {
   color: #DBE4E7;
+  text-decoration: underline;
 }
 .header .header-main {
   position: relative;
@@ -113,7 +115,7 @@ a:hover {
   color: #A1B3BF;
 }
 .header .header-main__phone a:hover {
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 .header .header-main__phone p {
   font-weight: 300;
@@ -283,6 +285,7 @@ a:hover {
 }
 .header .main-menu__item a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 .header .main-menu__item_active {
   background-image: linear-gradient(90deg, #FF65A5 0%, #FF8076 100%);
@@ -441,6 +444,7 @@ a:hover {
 .new-deals__menu-item a:hover {
   color: #333333;
   cursor: pointer;
+  text-decoration: underline;
 }
 .new-deals__menu-item_active {
   background-image: linear-gradient(90deg, #FF65A5 0%, #FF8076 100%);
@@ -963,6 +967,7 @@ a:hover {
   font-size: 18px;
   text-align: center;
   color: #000000;
+  text-decoration: none;
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(173, 71, 113, 0.6), inset 0px 1px 1px #FF8076;
   border-radius: 8px;
