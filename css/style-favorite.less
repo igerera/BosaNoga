@@ -15,11 +15,27 @@
             width: unset;
             margin: 25px auto 72px;
         }
-        .item-desc{
+        .item-desc {
             outline: none;
         }
-        .product-catalogue__product_favorite a{
-            background-image: url(../img/new-deals__product_favorite_chosen.png);
+        .item-pic {
+            z-index: 1;
+        }
+        .product-catalogue__product_favorite {
+            position: absolute;
+            top: 8px;
+            right: 5px;
+            z-index: 10;
+            a {
+                position: static;
+                width: 33px;
+            height: 30px;
+                background-image: url(../img/new-deals__product_favorite_chosen.png);
+                &:hover {
+                    background-image: url(../img/new-deals__product_favorite_refuse.png);
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
