@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Оформление заказа</title>
+    <title>Избранное</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-order.css">
+    <link rel="stylesheet" href="css/style-catalogue.css">
+    <link rel="stylesheet" href="css/style-favorite.css">
   </head>
   <body>
     <div class="container">
@@ -157,92 +159,237 @@
           </div>
         </div>
       </header>
-      <div class="wrapper order-wrapper">                  
+      <div class="wrapper wrapper_favorite">
         <div class="site-path">
           <ul class="site-path__items">
-            <li class="site-path__item"><a href="#">Главная</a></li>
-            <li class="site-path__item"><a href="#">Корзина</a></li>
-            <li class="site-path__item"><a href="#">Оформление заказа</a></li>
+            <li class="site-path__item"><a href="index.html">Главная</a></li>
+            <li class="site-path__item"><a href="favorite.html">Избранное</a></li>
           </ul>
         </div>
-        <section class="order-process">
-          <h2 class="order-process__title">Оформление заказа</h2>
-          <div class="order-process__basket order-basket">
-            <div class="order-basket__title">В ВАШЕЙ КОРЗИНЕ:</div>
-            <div class="order-basket__item-list">
-              <div class="basket-item">
-                <div class="basket-item__pic"><img src="img/catalogue-pics/product-catalogue__item-1.png" alt="product_1"></div>
-                <div class="basket-item__product">
-                  <div class="basket-item__product-name"><a href="#">Босоножки женские</a></div>
-                  <div class="basket-item__product-features">
-                    <div class="basket-item__size">Размер: <span>37</span></div>
-                    <div class="basket-item__producer">Производитель: <span>Albano</span></div>
-                    <div class="basket-item__color">Цвет: <span>Черный</span></div>
-                  </div>
-                </div>
-                <div class="basket-item__quantity">
-                  <div class="basket-item__quantity-change basket-item-list__quantity-change_minus">-</div>1
-                  <div class="basket-item__quantity-change basket-item-list__quantity-change_plus">+</div>
-                </div>
-                <div class="basket-item__price">5 950 <i class="fa fa-rub" aria-hidden="true"></i></div>
+        <main class="product-catalogue product-catalogue_favorite">
+          <section class="product-catalogue__head product-catalogue__head_favorite">
+            <div class="product-catalogue__section-title">
+              <h2 class="section-name">В ВАШЕМ ИЗБРАННОМ</h2><span class="amount amount_favorite"> 99 товаров</span>
+            </div>
+            <div class="product-catalogue__sort-by">
+              <p class="sort-by">Сортировать</p>
+              <select id="sorting" name="">
+                <option value="">по дате добавления</option>
+                <option value="">по размеру</option>
+                <option value="">по производителю</option>
+              </select>
+            </div>
+          </section>
+          <section class="product-catalogue__item-list product-catalogue__item-list_favorite">
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-1" src="img/catalogue-pics/product-catalogue__item-1.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
               </div>
-              <div class="basket-item">
-                <div class="basket-item__pic"><img src="img/catalogue-pics/product-catalogue__item-1.png" alt="product_1"></div>
-                <div class="basket-item__product">
-                  <div class="basket-item__product-name"><a href="#">Босоножки женские</a></div>
-                  <div class="basket-item__product-features">
-                    <div class="basket-item__size">Размер: <span>37</span></div>
-                    <div class="basket-item__producer">Производитель: <span>Albano</span></div>
-                    <div class="basket-item__color">Цвет: <span>Черный</span></div>
-                  </div>
+              <div class="item-desc">
+                <h4 class="item-name">Босоножки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+                <p class="item-price">18 520</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
                 </div>
-                <div class="basket-item__quantity">
-                  <div class="basket-item__quantity-change basket-item-list__quantity-change_minus">-</div>1
-                  <div class="basket-item__quantity-change basket-item-list__quantity-change_plus">+</div>
-                </div>
-                <div class="basket-item__price">5 950 <i class="fa fa-rub" aria-hidden="true"></i></div>
               </div>
             </div>
-            <div class="order-basket__summ">Итого:<span>12 050 <i class="fa fa-rub" aria-hidden="true"></i></span></div>
-          </div>
-          <div class="order-process__confirmed">
-            <form action="#">
-              <div class="order-process__delivery">
-                <h3 class="h3">КОМУ И КУДА ДОСТАВИТЬ?</h3>
-                <div class="order-process__delivery-form">
-                  <label class="order-process__delivery-label">
-                    <div class="order-process__delivery-text">Имя</div>
-                    <input class="order-process__delivery-input" type="text" name="delivery" placeholder="Представьтесь, пожалуйста">
-                  </label>
-                  <label class="order-process__delivery-label">
-                    <div class="order-process__delivery-text">Телефон</div>
-                    <input class="order-process__delivery-input" type="tel" name="delivery" placeholder="Номер в любом формате">
-                  </label>
-                  <label class="order-process__delivery-label">
-                    <div class="order-process__delivery-text">Адрес</div>
-                    <input class="order-process__delivery-input order-process__delivery-input_adress" type="text" name="delivery" placeholder="Ваша покупка будет доставлена по этому адресу">
-                  </label>
-                </div>
-                <p>Все поля обязательны для заполнения. Наш оператор свяжется с вами для уточнения деталей заказа.</p>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-2" src="img/catalogue-pics/product-catalogue__item-2.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
               </div>
-              <div class="order-process__paid">
-                <h3 class="h3">ХОТИТЕ ОПЛАТИТЬ ОНЛАЙН ИЛИ КУРЬЕРУ ПРИ ПОЛУЧЕНИИ?</h3>
-                <div class="order-process__paid-form">
-                  <label class="order-process__paid-label">
-                    <input class="order-process__paid-radio" type="radio" name="paid" value="card-online"><span class="order-process__paid-text">Картой онлайн</span>
-                  </label>
-                  <label class="order-process__paid-label">
-                    <input class="order-process__paid-radio" type="radio" name="paid" value="card-courier" checked=""><span class="order-process__paid-text">Картой курьеру</span>
-                  </label>
-                  <label class="order-process__paid-label">
-                    <input class="order-process__paid-radio" type="radio" name="paid" value="cash"><span class="order-process__paid-text">Наличными курьеру</span>
-                  </label>
+              <div class="item-desc">
+                <h4 class="item-name">Ботинки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+                <p class="item-price">23 150</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
                 </div>
               </div>
-              <input class="order-process__form-submit" type="submit" value="Подтвердить заказ">
-            </form>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-3" src="img/catalogue-pics/product-catalogue__item-3.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Босоножки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+                <p class="item-price">5 390</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-4" src="img/catalogue-pics/product-catalogue__item-4.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Кроссовки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Damlax</span></p>
+                <p class="item-price">6 520</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-5" src="img/catalogue-pics/product-catalogue__item-5.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Резиновые полусапоги женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Menghi Shoes</span></p>
+                <p class="item-price">10 030</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-6" src="img/catalogue-pics/product-catalogue__item-6.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Полусапоги женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Pegia</span></p>
+                <p class="item-price">10 140</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-7" src="img/catalogue-pics/product-catalogue__item-7.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Босоножки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Baldinini</span></p>
+                <p class="item-price">25 020</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-8" src="img/catalogue-pics/product-catalogue__item-8.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Туфли женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Baldini</span></p>
+                <p class="item-price">18 520</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-9" src="img/catalogue-pics/product-catalogue__item-9.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Полуботинки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+                <p class="item-price">21 830</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-10" src="img/catalogue-pics/product-catalogue__item-10.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Туфли женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+                <p class="item-price">20 830</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-11" src="img/catalogue-pics/product-catalogue__item-11.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Ботинки женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Norma J.Baker</span></p>
+                <p class="item-price">26 240</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+            <div class="item-list__item-card item">
+              <div class="item-pic"><img class="item-pic-12" src="img/catalogue-pics/product-catalogue__item-12.png" alt="">
+                <div class="product-catalogue__product_favorite"><a href="#"></a></div>
+                <div class="arrow arrow_left"></div>
+                <div class="arrow arrow_right"></div>
+              </div>
+              <div class="item-desc">
+                <h4 class="item-name">Туфли женские</h4>
+                <p class="item-producer">Производитель: <span class="producer">Vittorio Virgili</span></p>
+                <p class="item-price">17 750</p>
+                <div class="sizes">
+                  <p class="sizes__title">Размеры в наличии:</p>
+                  <p class="sizes__avalible">36, 37, 38, 39, 40, 41, 42</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="product-catalogue__pagination">
+            <div class="page-nav-wrapper">
+              <div class="angle-back"><a href="#"></a></div>
+              <ul>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="#">99</a></li>
+              </ul>
+              <div class="angle-forward"><a href="#"></a></div>
+            </div>
           </div>
-        </section>
+        </main>
       </div>
       <footer class="footer">
         <section class="subscribe">
