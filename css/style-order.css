@@ -249,6 +249,14 @@ a:hover {
   color: #B4C5D0;
   border: 1px solid #AFC1CD;
   border-radius: 19.5px;
+  background-color: #fffffff;
+}
+.order-done__continue:hover {
+  box-shadow: 2px 2px 1px 1px #cccccc;
+  cursor: pointer;
+}
+.order-done__continue:focus {
+  outline: none;
 }
 .order-info {
   padding: 1px 10px 28px 55px;
