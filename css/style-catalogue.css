@@ -242,17 +242,16 @@ a.item-list__item-card {
   z-index: 10;
 }
 
-.product-catalogue .product-catalogue__product_favorite-chosen:hover,
-.product-catalogue .product-catalogue__product_favorite:hover {
-  background-image: url(../img/new-deals__product_favorite_refuse.png);
-  cursor: pointer;
-}
-
 .product-catalogue__product_favorite-chosen {
   width: 33px;
   height: 30px;
   background-image: url(../img/catalogue-pics/product-catalogue__product_favorite_chosen.png);
   background-repeat: no-repeat;
+}
+
+.product-catalogue__product_favorite-chosen:hover {
+  background-image: url(../img/new-deals__product_favorite_refuse.png);
+  cursor: pointer;
 }
 
 /* Карточка товара в каталоге */
