@@ -506,9 +506,25 @@ li a:hover {
   background-image: url(../img/new-deals__product_favorite.png);
   background-repeat: no-repeat;
 }
-.new-deals__product_favorite :hover {
+.new-deals__product_favorite-hidden {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  display: none;
+  padding-left: 10px;
+  padding-right: 18px;
+  font-size: 18px;
+  color: #FF748B;
+  border: 2px solid #FF748B;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.new-deals__product_favorite:hover {
   background-image: url(../img/new-deals__product_favorite_chosen.png);
-  cursor: url(../img/new-deals__product_favorite_chosen.png), pointer;
+  cursor: pointer;
+}
+.new-deals__product_favorite:hover + .favorite-hidden {
+  display: inline-block;
 }
 .new-deals__product-info {
   padding-top: 8px;

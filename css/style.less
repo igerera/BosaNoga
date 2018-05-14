@@ -12,7 +12,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a, li a {
+a,
+li a {
     &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -125,7 +126,7 @@ a, li a {
                 font-size: 27px;
                 text-decoration: none;
                 color: #A1B3BF;
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -525,9 +526,25 @@ a, li a {
             width: 29px;
             background-image: url(../img/new-deals__product_favorite.png);
             background-repeat: no-repeat;
-            :hover{
+            &-hidden {
+                position: absolute;
+                right: 30px;
+                top: 16px;
+                display: none;
+                padding-left: 10px;
+                padding-right: 18px;
+                font-size: 18px;
+                color: #FF748B;
+                border: 2px solid #FF748B;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            &:hover {
                 background-image: url(../img/new-deals__product_favorite_chosen.png);
-                cursor: url(../img/new-deals__product_favorite_chosen.png), pointer;
+                cursor: pointer;
+                + .favorite-hidden {
+                    display: inline-block;
+                }
             }
         }
     }

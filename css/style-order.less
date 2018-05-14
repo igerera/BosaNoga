@@ -141,14 +141,20 @@ a {
         padding: 19px 64px;
         font-size: 24px;
         color: #FFFFFF;
-        background: linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
+        background-image: linear-gradient(45deg, #FF65A5 0%, rgb(253,145,162) 50%, #FF8076 100.22%);
+        background-position: 0 0;
+        background-size: 200% 200%;
         box-shadow: 0px 2px 8px rgba(255, 101, 165, 0.6), inset 0px 1px 1px #FF8076;
         border-radius: 8px;
         border-width: 0;
+        transition: background-position 1s;
         &:hover {
             cursor: pointer;
             box-shadow: none;
             margin: 71px auto 69px;
+        }
+        &:active{
+            background-position: 100% 0;
         }
     }
 }
@@ -266,12 +272,12 @@ a {
         color: #B4C5D0;
         border: 1px solid #AFC1CD;
         border-radius: 19.5px;
-        background-color: #fffffff;
-        &:hover{
+        background-color: #ffffff;
+        &:hover {
             box-shadow: 2px 2px 1px 1px #cccccc;
             cursor: pointer;
         }
-        &:focus{
+        &:focus {
             outline: none;
         }
     }
