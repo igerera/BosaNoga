@@ -16,11 +16,13 @@
             margin: 6px auto 71px;
         }
         .item-list__item-card {
+            display: block;
             margin-bottom: unset;
             margin-top: 10px;
             padding-bottom: 55px;
             &:hover {
                 box-shadow: 2px 2px 2px 2px #cccccc;
+                text-decoration: none;
                 .sizes {
                     display: block;
                 }
@@ -52,11 +54,12 @@
             top: 8px;
             right: 5px;
             z-index: 10;
-            a {
+            a, p {
                 position: static;
                 width: 33px;
                 height: 30px;
                 background-image: url(../img/new-deals__product_favorite_chosen.png);
+                background-repeat: no-repeat;
                 &:hover {
                     background-image: url(../img/new-deals__product_favorite_refuse.png);
                     cursor: pointer;
