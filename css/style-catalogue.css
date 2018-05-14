@@ -183,6 +183,9 @@ select {
 
 /*Основная часть каталога с фотками товара*/
 .product-catalogue__item-list {
+  
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -190,7 +193,7 @@ select {
   margin-left: 22px;
   border-top: 1px solid #F4F4F4;
 
-  outline: 1px solid green;
+ /* outline: 1px solid green;*/
 }
 
 /*Сердечки для избранного товара*/
@@ -220,15 +223,21 @@ select {
   width: 285px;
   height: auto;
 
- /* outline: 1px solid red;*/
+  /*outline: 1px solid red;*/
 }
 
 .item {
   width: 283px;
+  height: 386px;
   margin-top: 27px;
-  margin-bottom: 37px;
+  margin-bottom: -21px;
 
-  /*outline: 1px dashed pink;*/
+ /* outline: 1px dashed pink;*/
+}
+
+.item:hover {
+/*  position: absolute;*/
+  box-shadow: 3px 3px 15px #D4E4E6;
 }
 
 .item-pic {
@@ -338,7 +347,7 @@ select {
 .item-desc {
   width: 283px;
 
-  outline: 1px solid green;
+ /* outline: 1px solid green;*/
 }
 
 .item-name {
@@ -388,7 +397,7 @@ span.producer {
 .product-catalogue__pagination {
   display: block;
   width: 892px;
-  margin: 20px 0 25px 22px;
+  margin: 25px 0 25px 22px;
 
  /* outline: 1px solid blue;*/
 }
@@ -440,19 +449,29 @@ li.active {
   position: relative;
   display: inline-block;
   top: 0;
-  right: -15px;
   width: 26px;
   height: 26px;
   vertical-align: middle;
   background: url(../img/catalogue-pics/product-catalogue-sprite-min.png);
-  background-position: 80px -107px;
+  
 
   /*outline: 1px solid red;*/
 }
 
+.angle-back a {
+  right: -10px;
+  background-position: 85px -107px;
+}
+
 .angle-forward a {
-  left: -7px;
-  background-position: 36px -107px;
+  left: -8px;
+  background-position: 41px -107px;
+}
+
+.angle-back a:hover,
+.angle-forward a:hover {
+  cursor: pointer;
+  outline: solid 1px #cccccc;
 }
 
 
@@ -778,7 +797,7 @@ span.color-name {
 }
 
 
-/*Кастомизация checkbox*/
+/*Кастомизация чекбокса*/
 .checkbox {
   display: none;
 }
