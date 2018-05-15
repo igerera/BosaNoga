@@ -136,14 +136,13 @@ a {
         }
     }
     &__form-submit {
+        position: relative;
         display: block;
         margin: 70px auto;
         padding: 19px 64px;
         font-size: 24px;
         color: #FFFFFF;
-        background-image: linear-gradient(45deg, #FF65A5 0%, rgb(253,145,162) 50%, #FF8076 100.22%);
-        background-position: 0 0;
-        background-size: 200% 200%;
+        background-image: linear-gradient(90deg, #FF65A5 0%, #FF8076 100.22%);
         box-shadow: 0px 2px 8px rgba(255, 101, 165, 0.6), inset 0px 1px 1px #FF8076;
         border-radius: 8px;
         border-width: 0;
@@ -153,8 +152,34 @@ a {
             box-shadow: none;
             margin: 71px auto 69px;
         }
-        &:active{
-            background-position: 100% 0;
+        &_click {
+            overflow: hidden;
+            position: relative;
+            span {
+                z-index: 20;
+            }
+            &:after {
+                position: absolute;
+                top: -50px;
+                left: -65px;
+                width: 5px;
+                height: 155px;
+                content: "";
+                background: #ffffff;
+                filter: blur(7px);
+                -webkit-filter: blur(7px);
+                border-right: 10px solid #ffffff;
+                -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                -webkit-transform: rotate(-35deg);
+                -ms-transform: rotate(-35deg);
+                transform: rotate(-35deg);
+            }
+            &:active:after {
+                left: 120%;
+                -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            }
         }
     }
 }
