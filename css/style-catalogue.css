@@ -226,8 +226,6 @@ a.item-list__item-card {
   margin-bottom: -17px;
   padding-bottom: 53px;
   text-decoration: none;
-
-  /*z-index: -50;*/ /*удалить после подгонки картинок*/
 }
 
 .product-catalogue .item-list__item-card:hover {
@@ -247,13 +245,18 @@ a.item-list__item-card {
 }
 
 .product-catalogue .item-pic .arrow {
+  background: url(../img/catalogue-pics/product-catalogue-sprite-min.png);
   top: 110px;
   display: none;
 }
 
 .product-catalogue .item-pic .arrow_right {
   right: 0;
-  background-position: -30px 0;
+  background-position: -56px -105px;
+}
+
+.product-catalogue .item-pic .arrow_left {
+  background-position: -16px -105px;
 }
 
 .item-pic {
@@ -305,7 +308,6 @@ a.item-list__item-card {
 .item-pic-7 {
   position: relative;
   top: 38px;
-  left: 0px;
 }
 
 .item-pic-8 {
@@ -572,7 +574,6 @@ li.active {
 /*Сепаратор между частями*/
 .separator-150 {
   position: relative;
-  top: 0px;
   width: 150px;
   height: 1px;
   margin: 0 auto;
@@ -583,7 +584,7 @@ li.active {
   top: 5px;
 }
 .separator-150-2 {
-  top: 0px;
+  top: 0;
 }
 .separator-150-3 {
   top: 12px;
@@ -611,7 +612,6 @@ li.active {
 }
 
 .sidebar {
-  display: inline-block;
   width: 285px;
   height: auto;
   margin-left: 120px;
@@ -846,10 +846,10 @@ span.color-name {
   content: url(../img/catalogue-pics/checkbox-checked.png);
   display: block;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /*Размер каблука*/
@@ -1044,7 +1044,6 @@ background-color: rgba(161, 179, 191, 0.5);
 background-image: url('');
 background-repeat: no-repeat;
 width: 7px;
-height: 0px;
 }
 
 ::-webkit-scrollbar{
