@@ -296,19 +296,26 @@ li.active {
 }
 
 /*Избранное*/
-.in-favourites-wrapper {
+.in-favourites-wrapper {  
   position: relative;
-  top: 59px;
-  left: 203px;
+  top: 58px;
+  left: 204px;
   display: inline-block;
+  width: 200px;
 
 /*  outline: 1px solid blue;*/
+}
+
+.in-favourites-wrapper:hover {  
+  transform: scale(1.1);
+
+  /*outline: 1px solid blue;*/
 }
 
 .in-favourites {
   position: relative;
   display: inline-block;
-  padding-left: 2px;
+  padding-left: 1px;
   vertical-align: middle;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -316,7 +323,7 @@ li.active {
   font-size: 18px;
   color: #333333;
 
-/*  outline: 1px solid red;*/
+ /* outline: 1px solid red;*/
 }
 
 .favourite {
@@ -327,13 +334,9 @@ li.active {
   background: url(../img/product-card-pics/product-card__favorite.png) no-repeat;
 }
 
-.favourite:active {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  vertical-align: top;
+/*.favourite:active {
   background: url(../img/product-card-pics/product-card__favorite-fill.png) no-repeat;
-}
+}*/
 
 /*Счётчик для корзины*/
 .basket-item__quantity {
