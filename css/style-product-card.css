@@ -334,6 +334,7 @@ li.active {
   border-radius: 8px;
   border: none;
 }
+
 .in-basket-click {
   overflow: hidden;
   position: relative;
@@ -508,23 +509,23 @@ li.active {
 }
 
 .overlooked-slider__item-1 {
-  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-1.png);
+  background-image: url(../img/catalogue-pics/product-catalogue__overlooked-slider-item-1.png);
 }
 
 .overlooked-slider__item-2 {
-  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-2.png);
+  background-image: url(../img/catalogue-pics/product-catalogue__overlooked-slider-item-2.png);
 }
 
 .overlooked-slider__item-3 {
-  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-3.png);
+  background-image: url(../img/catalogue-pics/product-catalogue__overlooked-slider-item-3.png);
 }
 
 .overlooked-slider__item-4 {
-  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-4.png);
+  background-image: url(../img/catalogue-pics/product-catalogue__overlooked-slider-item-4.png);
 }
 
 .overlooked-slider__item-5 {
-  background-image: url(../img/catalogue-pics/product-catalogue__lower-slider-item-5.png);
+  background-image: url(../img/catalogue-pics/product-catalogue__overlooked-slider-item-5.png);
 }
 
 
