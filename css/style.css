@@ -61,6 +61,7 @@ li a:hover {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
 .header .top-menu {
   min-height: 49px;
   height: 1px;
@@ -704,6 +705,7 @@ li a:hover {
   font-size: 14px;
   color: #333333;
   mix-blend-mode: normal;
+  text-transform: uppercase;
 }
 .subscribe__radios {
   display: flex;
