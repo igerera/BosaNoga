@@ -1,0 +1,69 @@
+footer.footer
+    section.subscribe
+        .subscribe__wrapper
+            h2.subscribe__title ПОДПИСАТЬСЯ НА РАССЫЛКУ ВЫГОДНЫХ ПРЕДЛОЖЕНИЙ
+            form.subscribe__radios(action='')
+                label.subscribe__radio_label
+                    input.subscribe__radio(type='radio', name='subscribe', value='women')
+                    .subscribe__radio_text Женское
+                label.subscribe__radio_label
+                    input.subscribe__radio(type='radio', name='subscribe', value='men')
+                    .subscribe__radio_text Мужское
+                label.subscribe__radio_label
+                    input.subscribe__radio(type='radio', name='subscribe', value='both', checked='')
+                    .subscribe__radio_text Всё
+                input.subscribe__email(type='email', placeholder='Ваш e-mail')
+                input.subscribe__submit(type='submit', value='ПОДПИСАТЬСЯ')
+    .footer__bottom
+        .wrapper
+            .footer__menus
+                .footer__menu.footer__menu_about
+                    | О магазине
+                    ul
+                        li
+                            a(href='#') BosaNoga
+                        li
+                            a(href='#') Новости
+                        li
+                            a(href='#') Пресса
+                .footer__menu.footer__menu_collection
+                    | Коллекции
+                    ul
+                        li
+                            a(href='#') Обувь
+                        li
+                            a(href='#') Аксессуары
+                        li
+                            a(href='#') Для дома
+                .footer__menu.footer__menu_help
+                    | Помощь
+                    ul
+                        li
+                            a(href='#') Как купить?
+                        li
+                            a(href='#') Возврат
+                        li
+                            a(href='#') Контакты
+            .footer__info
+                h3.footer__info_title Принимаем к оплате:
+                .footer__paid-systems
+                    .footer__paid.footer__paid_paypal
+                    .footer__paid.footer__paid_master-card
+                    .footer__paid.footer__paid_visa
+                    .footer__paid.footer__paid_yandex
+                    .footer__paid.footer__paid_webmoney
+                    .footer__paid.footer__paid_qiwi
+                .footer__social-links
+                    h3.footer__social-links_title
+                        | Мы в соц.сетях:
+                    .footer__social-link.footer__social-link_twitter
+                    .footer__social-link.footer__social-link_vk
+                .footer__copyright
+                    | 2009-2018 © BosaNoga.ru — модный интернет-магазин обуви
+                    br
+                    |  и аксессуаров. Все права защищены. Доставка по всей России!
+            .footer__contacts
+                a.footer__phone(href='tel:+7-495-790-35-03') +7 495 79 03 5 03
+                p.footer__phone_text Ежедневно: с 09-00 до 21-00
+                a.footer__email(href='mailto:office@bosanoga.ru') office@bosanoga.ru
+
